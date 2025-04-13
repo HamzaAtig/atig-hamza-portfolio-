@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        max-width: 850px;
+        margin: 0 auto;
+        font-family: "Segoe UI", sans-serif;
+        padding: 1.5rem;
+        background-color: #fdfdfd;
+        color: #333;
+      }
+
+      nav {
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+        padding: 1rem 0;
+        margin-bottom: 2rem;
+      }
+
+      nav a {
+        margin-right: 1.5rem;
+        color: #2c3e50;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      nav a:hover {
+        color: #3498db;
+      }
+
+      footer {
+        border-top: 1px solid #eee;
+        margin-top: 3rem;
+        padding-top: 1rem;
+        font-size: 0.9rem;
+        color: #777;
+        text-align: center;
+      }
+
+      h1, h2, h3 {
+        color: #2c3e50;
+      }
+
+      .badge {
+        background-color: #3498db;
+        color: white;
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        margin-right: 5px;
+      }
+
+      ul {
+        padding-left: 1.4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Menu de navigation -->
+    <nav>
+      <a href="/">Accueil</a>
+      <a href="/about">À propos</a>
+      <a href="/projects">Projets</a>
+      <a href="/contact">Contact</a>
+    </nav>
+
+    <!-- Contenu de la page -->
+    {{ content }}
+
+    <!-- Footer -->
+    <footer>
+      &copy; {{ site.time | date: "%Y" }} Hamza Atig — Tous droits réservés. <br />
+    </footer>
+  </body>
+</html>
