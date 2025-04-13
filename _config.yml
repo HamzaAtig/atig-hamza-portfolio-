@@ -3,8 +3,9 @@ email: hamza.atig@gmail.com
 description: >-
   Portfolio professionnel d'Hamza Atig — Architecte Java/Cloud
 
-baseurl: "" # ← important pour repo perso
+baseurl: "/atig-hamza-portfolio-"
 url: "https://hamzaatig.github.io"
+
 
 # Thème par défaut
 theme: minima
