@@ -125,15 +125,35 @@
         justify-content: center;
         font-size: 2rem;
         font-weight: bold;
-        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-        margin-top: 60px; /* pour compenser le header */
+        margin-top: 60px;
         margin-bottom: 2rem;
+      }
+
+      .hero-text {
+        font-size: 1.8rem;
+        line-height: 1.4;
+        text-align: center;
+        max-width: 90%;
+        color: #ffffff;
+        /* Supprimé : text-shadow, background-color, box-shadow */
+        padding: 0.5rem 1rem;
+        border-radius: 0;
+      }
+
+      .hero-text .icon {
+        font-size: 1.5rem;
+        margin-right: 0.5rem;
+      }
+
+      .hero-text .highlight {
+        color: #ffe082;
+        font-weight: 700;
       }
 
       .container {
         max-width: 900px;
-        margin: 2rem auto;
-        padding: 0 1rem;
+        margin: 4rem auto;
+        padding: 2rem 1rem;
         background: #ffffff;
         border-radius: 10px;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
@@ -173,21 +193,21 @@
       .skills.standard span:hover {
         background-color: #b9d4f4;
         color: #000;
-      }s
-
+      }
       footer {
+        background: #f9f9f9;
+        color: #666;
         text-align: center;
         font-size: 0.9rem;
-        color: #777;
-        border-top: 1px solid #eee;
-        padding: 2rem 1rem;
+        padding: 1.5rem 1rem;
         margin-top: 4rem;
+        border-top: 1px solid #ddd;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.04);
       }
 
       .section-spacing {
         margin-bottom: 3rem;
       }
-
     </style>
 
     <!-- JS pour menu burger -->
@@ -214,15 +234,19 @@
     </header>
 
     <div class="hero-banner">
-      <h1 class="hero-text">Bienvenue sur mon portfolio</h1>
+      <h1 class="hero-text">
+        <span class="icon">💼</span> Hamza Atig —
+        <span class="highlight">Architecte Java & Cloud</span>, au service de la
+        performance
+      </h1>
     </div>
 
     <main class="container section-spacing">{{ content }}</main>
 
     <!-- Footer -->
-    <footer >
-      &copy; {{ site.time | date: "%Y" }} Hamza Atig — Tous droits réservés.
-      <br />
+    <footer>
+      &copy; {{ site.time | date: "%Y" }} <strong>Hamza Atig</strong> — Tous
+      droits réservés.
     </footer>
   </body>
 </html>
