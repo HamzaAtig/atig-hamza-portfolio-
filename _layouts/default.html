@@ -2,7 +2,12 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="Portfolio de Hamza Atig, Architecte Java & Cloud. Découvrez mes projets, compétences techniques et expériences professionnelles.">
+    <meta name="keywords" content="Hamza Atig, portfolio, architecte Java, cloud, développeur, projets IT, Spring Boot, API, CI/CD">
+    <meta name="author" content="Hamza Atig">
+    <meta name="robots" content="index, follow">
+
+    <title>{{ page.title }} | Hamza Atig - Architecte Java & Cloud</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -217,6 +222,9 @@
         menu.classList.toggle("open");
       }
     </script>
+
+    {% seo %}
+
   </head>
 
   <body>

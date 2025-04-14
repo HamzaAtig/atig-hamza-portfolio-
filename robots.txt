@@ -1,0 +1,14 @@
+# Autoriser tous les robots à explorer le site
+User-agent: *
+Allow: /
+
+# Empêcher l’indexation des fichiers techniques (optionnel selon ton projet)
+Disallow: /assets/
+Disallow: /_site/
+Disallow: /Gemfile
+Disallow: /Gemfile.lock
+Disallow: /LICENSE
+Disallow: /README.md
+
+# Lien vers le plan de site XML
+Sitemap: https://hamzaatig.github.io/atig-hamza-portfolio-/sitemap.xml

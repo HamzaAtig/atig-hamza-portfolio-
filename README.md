@@ -99,6 +99,24 @@ http://localhost:4000
 
 ---
 
+## 🔍 SEO et Référencement
+
+Le site est optimisé pour les moteurs de recherche grâce aux éléments suivants :
+
+- **`jekyll-seo-tag`** : Génère automatiquement les balises meta utiles (titre, description, OpenGraph, etc.)
+- **`jekyll-sitemap`** : Génère un fichier `sitemap.xml` listant toutes les pages à indexer
+- **Structure sémantique** : Titres hiérarchisés (`h1`, `h2`, etc.), contenu bien structuré
+- **URL propres** hébergées via **GitHub Pages**
+- **Accessibilité publique** à l’adresse suivante :  
+  👉 [https://hamzaatig.github.io/atig-hamza-portfolio-/](https://hamzaatig.github.io/atig-hamza-portfolio-/)
+
+✅ Bonne syntaxe PowerShell (Windows)
+```
+$env:JEKYLL_ENV="production"; bundle exec jekyll build
+```
+
+---
+
 ## 📄 Licence
 
 Ce projet est open-source sous licence **GPL-3.0**.
@@ -112,4 +130,3 @@ Merci à [Jekyll](https://jekyllrb.com) et [GitHub Pages](https://pages.github.c
 ---
 
 > ✉️ Pour toute question, n’hésitez pas à me contacter via [hamza.atig@gmail.com](mailto:hamza.atig@gmail.com)
-```
