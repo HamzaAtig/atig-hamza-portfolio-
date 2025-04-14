@@ -4,11 +4,17 @@ title: "À propos"
 permalink: /about
 ---
 
-# 👨‍💻 À propos de moi
 
-Avec plus de 13 ans d’expérience dans le développement et l’architecture Java, j’ai accompagné de nombreuses structures — de start-ups ambitieuses à des groupes bancaires d’envergure — dans la conception de plateformes robustes, performantes et évolutives.
+<div style="display: flex; align-items: center; gap: 2rem; margin-top: 2rem;">
+   <img src="{{ site.baseurl }}/assets/img/hamza.jpg" alt="Hamza Atig" style="width: 140px; height: 140px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
 
-J’ai occupé plusieurs rôles techniques : développeur, lead technique, puis architecte, avec une reconnaissance constante pour la qualité de mes livrables, mon implication et ma capacité à aligner la vision technique avec les enjeux métier.
+  <div>
+    <h2>👨‍💻 À propos de moi</h2>
+    <p>Avec plus de 13 ans d’expérience dans le développement et l’architecture Java, j’ai accompagné de nombreuses structures — de start-ups ambitieuses à des groupes bancaires d’envergure — dans la conception de plateformes robustes, performantes et évolutives.</p>
+    
+    <p>J’ai occupé plusieurs rôles techniques : développeur, lead technique, puis architecte, avec une reconnaissance constante pour la qualité de mes livrables, mon implication et ma capacité à aligner la vision technique avec les enjeux métier.</p>
+  </div>
+</div>
 
 ---
 

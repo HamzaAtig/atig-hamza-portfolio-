@@ -3,10 +3,15 @@ layout: default
 title: "Bienvenue sur mon portfolio"
 ---
 
-# 👋 Hamza Atig
+<div style="display: flex; align-items: center; gap: 2rem; margin-top: 2rem;">
+   <img src="{{ site.baseurl }}/assets/img/hamza.jpg" alt="Hamza Atig" style="width: 140px; height: 140px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
 
-**Architecte technique Java/Cloud avec 13 ans d’expérience**  
-Passionné par les architectures robustes, l’automatisation, et l’optimisation de la performance.
+  <div>
+    <h2>👋 Hamza Atig</h2>
+    <p><strong>Architecte technique Java/Cloud avec 13 ans d’expérience</strong></p>
+    <p>Passionné par les architectures robustes, l’automatisation, et l’optimisation de la performance.</p>
+  </div>
+</div>
 
 ---
 ## 💼 Expériences clés
@@ -56,15 +61,8 @@ Passionné par les architectures robustes, l’automatisation, et l’optimisati
   <span>Agile / SAFe</span>
 </div>
 
-
 ---
 
-## 📄 Mon CV
-
-Vous pouvez consulter ou télécharger mon CV ici :  
-➡️ [Télécharger le CV (PDF)](/assets/CV_Hamza_Atig_FR.pdf)
-
----
 
 ## 📬 Me contacter
 
