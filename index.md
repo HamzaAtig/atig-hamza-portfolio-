@@ -3,55 +3,6 @@ layout: default
 title: "Bienvenue sur mon portfolio"
 ---
 
-<style>
-h1, h2, h3 {
-  color: #2c3e50;
-  font-weight: bold;
-  margin-top: 1.5rem;
-}
-
-ul {
-  padding-left: 1.5rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-
-li {
-  margin-bottom: 0.5rem;
-}
-
-hr {
-  border: 0;
-  border-top: 1px solid #ddd;
-  margin: 2rem 0;
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 1rem;
-}
-
-.skills span {
-  background-color: #f0f4f8;
-  color: #2c3e50;
-  padding: 6px 12px;
-  border-radius: 50px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
-  transition: all 0.2s ease-in-out;
-}
-
-.skills span:hover {
-  background-color: #3498db;
-  color: #fff;
-  cursor: default;
-}
-</style>
-
-
 # 👋 Hamza Atig
 
 **Architecte technique Java/Cloud avec 13 ans d’expérience**  
@@ -73,22 +24,36 @@ Passionné par les architectures robustes, l’automatisation, et l’optimisati
 ### 🏦 Orange Bank — Tech Lead *(2019 – 2022)*
 - Architecture sécurisée autour de Kafka, AWS, Airflow
 - Mise en place de CI/CD et microservices Spring Boot
+
+
+## 🧠 Expertises clés
+
+<div class="skills expert">
+  <span>API Design</span>
+  <span>Architecture logicielle</span>
+  <span>Spring Boot / Security</span>
+  <span>CI/CD (GitLab, Jenkins)</span>
+  <span>Terraform / Kubernetes</span>
+  <span>AWS</span>
+  <span>Monitoring (Grafana, Dynatrace, ELK)</span>
+  <span>Sécurité (OAuth2, SSO, OWASP)</span>
+  <span>Optimisation des performances</span>
+</div>
+
 ---
 
-## 🛠️ Compétences techniques
+## ⚙️ Compétences standards
 
-<div class="skills">
-  <span>Java</span>
-  <span>Spring Boot</span>
+<div class="skills standard">
+  <span>Java / JEE</span>
   <span>JPA / Hibernate</span>
-  <span>Kubernetes</span>
-  <span>Terraform</span>
-  <span>AWS</span>
-  <span>API REST</span>
-  <span>Swagger / OpenAPI</span>
   <span>Kafka</span>
-  <span>CI/CD</span>
-  <span>Jenkins</span>
+  <span>Airflow</span>
+  <span>Quarkus</span>
+  <span>MuleSoft</span>
+  <span>Git / GitHub / GitLab</span>
+  <span>SQL / NoSQL (Oracle, PostgreSQL, MongoDB)</span>
+  <span>Agile / SAFe</span>
 </div>
 
 
@@ -105,3 +70,5 @@ Vous pouvez consulter ou télécharger mon CV ici :
 
 - **📧 Email** : hamza.atig@gmail.com  
 - [💼 LinkedIn](https://www.linkedin.com/in/hamza-%F0%9F%92%BB-atig-88760559/)  
+
+
