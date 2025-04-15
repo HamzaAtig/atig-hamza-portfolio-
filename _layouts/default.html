@@ -2,10 +2,16 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Portfolio de Hamza Atig, Architecte Java & Cloud. Découvrez mes projets, compétences techniques et expériences professionnelles.">
-    <meta name="keywords" content="Hamza Atig, portfolio, architecte Java, cloud, développeur, projets IT, Spring Boot, API, CI/CD">
-    <meta name="author" content="Hamza Atig">
-    <meta name="robots" content="index, follow">
+    <meta
+      name="description"
+      content="Portfolio de Hamza Atig, Architecte Java & Cloud. Découvrez mes projets, compétences techniques et expériences professionnelles."
+    />
+    <meta
+      name="keywords"
+      content="Hamza Atig, portfolio, architecte Java, cloud, développeur, projets IT, Spring Boot, API, CI/CD"
+    />
+    <meta name="author" content="Hamza Atig" />
+    <meta name="robots" content="index, follow" />
     <meta name="google-site-verification" content="d6edf24a366eba56" />
 
     <title>{{ page.title }} | Hamza Atig - Architecte Java & Cloud</title>
@@ -216,6 +222,21 @@
       }
     </style>
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QCMTJ0CS7E"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-QCMTJ0CS7E");
+    </script>
+
     <!-- JS pour menu burger -->
     <script>
       function toggleMenu() {
@@ -225,7 +246,6 @@
     </script>
 
     {% seo %}
-
   </head>
 
   <body>
