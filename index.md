@@ -16,8 +16,8 @@ title: "Bienvenue sur mon portfolio"
 ---
 ## 💼 Expériences clés
 
-### 🏦 Amundi — Architecte technique *(depuis 2022)*
-- Conception d’architectures réutilisables pour la plateforme **ALTO Wealth**
+### 🏦 Amundi — Architecte technique *(depuis juin 2023)*
+- Conception d’architectures réutilisables pour la plateforme **Wealth**
 - Optimisation des performances via analyse mémoire (heap dumps, AWR)
 - Mise en place d’API REST documentées (Swagger/OpenAPI)
 - Coaching technique & alignement des équipes avec la vision produit
