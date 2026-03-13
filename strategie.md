@@ -4,6 +4,15 @@ title: "Offres & stratégie"
 permalink: /strategie
 description: "Offres forfaitaires, cibles, plan de prospection et process de mission pour modernisation et sécurité."
 alternate: /en/strategy
+hero_title: "🎯 Offres forfaitaires en sécurité, modernisation et DevSecOps"
+hero_subtitle: "Diagnostics rapides, blueprints d’architecture et software factory"
+faq:
+  - q: "Travaillez-vous uniquement au forfait?"
+    a: "Je privilégie les offres forfaitaires, mais je peux intervenir en mission courte si le périmètre est clair et cadré."
+  - q: "Quel est le délai moyen pour un diagnostic?"
+    a: "Entre 5 et 10 jours selon la taille et la complexité de la plateforme."
+  - q: "Intervenez-vous sur des environnements non‑Java?"
+    a: "Oui, j’interviens sur des architectures cloud, IAM, CI/CD et intégration, indépendamment du langage."
 ---
 
 ## 🎯 Objectif
@@ -31,6 +40,10 @@ Sortir du ciblage exclusif grands comptes en proposant des offres claires et ré
     <div class="offer-meta">Livrables: pipelines GitLab/Jenkins, policy CVE, Terraform, templates de déploiement.</div>
   </div>
 </div>
+
+---
+
+Voir aussi: [cas d’usage]({{ "/cas-usage" | relative_url }}).
 
 ---
 
@@ -70,6 +83,19 @@ Sortir du ciblage exclusif grands comptes en proposant des offres claires et ré
 
 J’utilise l’IA pour accélérer l’analyse, fiabiliser les diagnostics et améliorer la qualité des livrables.
 L’IA est un accélérateur, pas un substitut: chaque recommandation est validée techniquement et adaptée au contexte client.
+
+---
+
+## ❓ FAQ
+
+**Travaillez-vous uniquement au forfait?**  
+Je privilégie les offres forfaitaires, mais je peux intervenir en mission courte si le périmètre est clair et cadré.
+
+**Quel est le délai moyen pour un diagnostic?**  
+Entre 5 et 10 jours selon la taille et la complexité de la plateforme.
+
+**Intervenez-vous sur des environnements non‑Java?**  
+Oui. J’interviens sur architectures cloud, IAM, CI/CD et intégration, quel que soit le langage.
 
 ---
 

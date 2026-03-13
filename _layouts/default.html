@@ -143,6 +143,14 @@
         font-weight: 700;
       }
 
+      .hero-subtitle {
+        display: block;
+        font-size: 1.05rem;
+        font-weight: 500;
+        margin-top: 0.4rem;
+        color: #ffffff;
+      }
+
       .container {
         max-width: 900px;
         margin: 4rem auto;
@@ -371,6 +379,26 @@
       }
     </script>
     {% endif %}
+    {% if page.faq %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {% for item in page.faq %}
+          {
+            "@type": "Question",
+            "name": "{{ item.q | escape }}",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "{{ item.a | escape }}"
+            }
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }
+    </script>
+    {% endif %}
   </head>
 
   <body>
@@ -383,12 +411,14 @@
             <a href="{{ '/en/' | relative_url }}">Home</a>
             <a href="{{ '/en/about' | relative_url }}">About</a>
             <a href="{{ '/en/strategy' | relative_url }}">Offers & strategy</a>
+            <a href="{{ '/en/use-cases' | relative_url }}">Use cases</a>
             <a href="{{ '/en/projects' | relative_url }}">Projects</a>
             <a href="{{ '/en/contact' | relative_url }}">Contact</a>
           {% else %}
             <a href="{{ '/' | relative_url }}">Accueil</a>
             <a href="{{ '/about' | relative_url }}">À propos</a>
             <a href="{{ '/strategie' | relative_url }}">Offres & stratégie</a>
+            <a href="{{ '/cas-usage' | relative_url }}">Cas d’usage</a>
             <a href="{{ '/projects' | relative_url }}">Projets</a>
             <a href="{{ '/contact' | relative_url }}">Contact</a>
           {% endif %}
@@ -402,7 +432,12 @@
 
     <div class="hero-banner">
       <h1 class="hero-text">
-        {% if page.lang == "en" %}
+        {% if page.hero_title %}
+          {{ page.hero_title }}
+          {% if page.hero_subtitle %}
+            <span class="hero-subtitle">{{ page.hero_subtitle }}</span>
+          {% endif %}
+        {% elsif page.lang == "en" %}
           <span class="icon">💼</span> Hamza Atig —
           <span class="highlight">Solutions & cloud security architect</span>,
           focused on performance

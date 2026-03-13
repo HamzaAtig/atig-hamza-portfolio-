@@ -3,6 +3,8 @@ layout: default
 title: "Bienvenue sur mon portfolio"
 description: "Architecte solutions & sécurité cloud. Offres forfaitaires, modernisation, sécurité et DevSecOps."
 alternate: /en/
+hero_title: "💼 Architecte sécurité cloud freelance à Paris"
+hero_subtitle: "Modernisation, DevSecOps et IAM pour plateformes critiques"
 ---
 
 <div style="display: flex; align-items: center; gap: 2rem; margin-top: 2rem;">

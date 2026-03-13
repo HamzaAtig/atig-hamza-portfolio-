@@ -4,6 +4,8 @@ title: "À propos"
 permalink: /about
 description: "Architecte solutions & sécurité cloud. Modernisation, IAM, intégration et fiabilisation de plateformes critiques."
 alternate: /en/about
+hero_title: "👨‍💻 Architecte solutions & sécurité cloud freelance"
+hero_subtitle: "14 ans d’expérience en modernisation et fiabilisation"
 ---
 
 

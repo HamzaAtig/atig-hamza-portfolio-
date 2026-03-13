@@ -5,6 +5,15 @@ permalink: /en/strategy
 lang: en
 description: "Fixed‑price offers, targets, prospecting plan and delivery process for modernization and security."
 alternate: /strategie
+hero_title: "🎯 Fixed‑price offers for security, modernization and DevSecOps"
+hero_subtitle: "Fast diagnostics, architecture blueprints and software factory"
+faq:
+  - q: "Do you work only on fixed‑price packages?"
+    a: "I prioritize fixed‑price offers, but I can take short missions when the scope is clear."
+  - q: "How long does a diagnostic take?"
+    a: "Typically 5 to 10 days depending on platform size and complexity."
+  - q: "Do you work beyond Java stacks?"
+    a: "Yes. I focus on cloud architecture, IAM, CI/CD and integration across stacks."
 ---
 
 ## 🎯 Goal
@@ -32,6 +41,10 @@ Move beyond large‑account targeting by offering clear, reusable packages tailo
     <div class="offer-meta">Deliverables: GitLab/Jenkins pipelines, CVE policy, Terraform, deployment templates.</div>
   </div>
 </div>
+
+---
+
+See also: [use cases]({{ "/en/use-cases" | relative_url }}).
 
 ---
 
@@ -71,6 +84,19 @@ Move beyond large‑account targeting by offering clear, reusable packages tailo
 
 I use AI to accelerate analysis, improve diagnostic reliability, and enhance delivery quality.
 AI is an accelerator, not a substitute: every recommendation is technically validated and adapted to the context.
+
+---
+
+## ❓ FAQ
+
+**Do you work only on fixed‑price packages?**  
+I prioritize fixed‑price offers, but I can take short missions when the scope is clear.
+
+**How long does a diagnostic take?**  
+Typically 5 to 10 days depending on platform size and complexity.
+
+**Do you work beyond Java stacks?**  
+Yes. I focus on cloud architecture, IAM, CI/CD and integration across stacks.
 
 ---
 

@@ -5,6 +5,8 @@ permalink: /en/about
 lang: en
 description: "Solutions & cloud security architect. Modernization, IAM, integration, and platform reliability."
 alternate: /about
+hero_title: "👨‍💻 Solutions & cloud security architect (freelance)"
+hero_subtitle: "14 years of experience in modernization and reliability"
 ---
 
 

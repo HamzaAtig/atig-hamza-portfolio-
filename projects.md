@@ -4,6 +4,8 @@ title: "Projets"
 permalink: /projects
 description: "Projets récents et missions par client, orientés modernisation, sécurité et intégration."
 alternate: /en/projects
+hero_title: "🧩 Projets de modernisation et sécurité cloud"
+hero_subtitle: "Finance, assurance, SaaS et plateformes B2B"
 ---
 
 ## 🚀 Projets récents (extraits)

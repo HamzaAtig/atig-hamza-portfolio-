@@ -5,6 +5,8 @@ permalink: /en/
 lang: en
 description: "Solutions & cloud security architect. Fixed‑price offers, modernization, security and DevSecOps."
 alternate: /
+hero_title: "💼 Freelance cloud security architect in Paris"
+hero_subtitle: "Modernization, DevSecOps, and IAM for critical platforms"
 ---
 
 <div style="display: flex; align-items: center; gap: 2rem; margin-top: 2rem;">
