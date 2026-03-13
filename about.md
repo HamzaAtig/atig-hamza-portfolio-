@@ -5,7 +5,7 @@ permalink: /about
 description: "Architecte solutions & sécurité cloud. Modernisation, IAM, intégration et fiabilisation de plateformes critiques."
 alternate: /en/about
 hero_title: "👨‍💻 Architecte solutions & sécurité cloud freelance"
-hero_subtitle: "14 ans d’expérience en modernisation et fiabilisation"
+hero_subtitle: "<span class=\"exp-years\" data-exp-start-year=\"2011\" data-exp-start-month=\"7\">14</span> ans d’expérience en modernisation et fiabilisation"
 ---
 
 
@@ -14,7 +14,7 @@ hero_subtitle: "14 ans d’expérience en modernisation et fiabilisation"
 
   <div>
     <h2>👨‍💻 À propos de moi</h2>
-    <p>Architecte solutions & sécurité cloud avec 14 ans d’expérience, j’interviens sur des plateformes critiques où la performance, la résilience et la conformité sont centrales.</p>
+    <p>Architecte solutions & sécurité cloud avec <span class="exp-years" data-exp-start-year="2011" data-exp-start-month="7">14</span> ans d’expérience, j’interviens sur des plateformes critiques où la performance, la résilience et la conformité sont centrales.</p>
     <p>Mon rôle: stabiliser le run, sécuriser les échanges et construire des trajectoires de modernisation réalistes, sans rupture de service.</p>
   </div>
 </div>

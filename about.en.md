@@ -6,7 +6,7 @@ lang: en
 description: "Solutions & cloud security architect. Modernization, IAM, integration, and platform reliability."
 alternate: /about
 hero_title: "👨‍💻 Solutions & cloud security architect (freelance)"
-hero_subtitle: "14 years of experience in modernization and reliability"
+hero_subtitle: "<span class=\"exp-years\" data-exp-start-year=\"2011\" data-exp-start-month=\"7\">14</span> years of experience in modernization and reliability"
 ---
 
 
@@ -15,7 +15,7 @@ hero_subtitle: "14 years of experience in modernization and reliability"
 
   <div>
     <h2>👨‍💻 About me</h2>
-    <p>Solutions & cloud security architect with 14 years of experience, working on critical platforms where performance, resilience, and compliance are key.</p>
+    <p>Solutions & cloud security architect with <span class="exp-years" data-exp-start-year="2011" data-exp-start-month="7">14</span> years of experience, working on critical platforms where performance, resilience, and compliance are key.</p>
     <p>My role: stabilize operations, secure data flows, and design realistic modernization paths without service disruption.</p>
   </div>
 </div>

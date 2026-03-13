@@ -14,7 +14,7 @@ hero_subtitle: "Modernization, DevSecOps, and IAM for critical platforms"
 
   <div>
     <h2>👋 Hamza Atig</h2>
-    <p><strong>Solutions & cloud security architect with 14 years of experience</strong></p>
+    <p><strong>Solutions & cloud security architect with <span class="exp-years" data-exp-start-year="2011" data-exp-start-month="7">14</span> years of experience</strong></p>
     <p>I modernize, secure, and stabilize critical platforms through fixed‑price, packaged offers.</p>
   </div>
 </div>
