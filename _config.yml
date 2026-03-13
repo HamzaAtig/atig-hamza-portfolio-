@@ -1,17 +1,352 @@
-title: Hamza Atig
-email: hamza.atig@gmail.com
-description: >-
-  Portfolio professionnel d'Hamza Atig — Architecte solutions & securite cloud
-lang: fr
-logo: /assets/img/hamza.jpg
-social:
-  name: Hamza Atig
-  links:
-    - https://www.linkedin.com/in/hamzaatig-88760559/
-baseurl: "/atig-hamza-portfolio-"
-url: "https://hamzaatig.github.io"
+# ==============================================================================
+# PORTFOLIO TEMPLATE - Configuration
+# ==============================================================================
+# Instructions: Modifiez les valeurs ci-dessous pour personnaliser votre portfolio
+# Documentation: voir README.md
+# ==============================================================================
 
-theme: minima
+# ------------------------------------------------------------------------------
+# Informations personnelles
+# ------------------------------------------------------------------------------
+author:
+  name: "Hamza Atig"
+  title: "Architecte Solutions & Securite Cloud"
+  title_en: "Solutions & Cloud Security Architect"
+  tagline: "Modernisation, DevSecOps et IAM pour plateformes critiques"
+  tagline_en: "Modernization, DevSecOps, and IAM for critical platforms"
+  email: "hamza.atig@gmail.com"
+  phone: ""  # Optionnel
+  location: "Paris, France"
+  status: "Freelance"
+  experience_start_year: 2011
+  experience_start_month: 7
+  photo: "/assets/img/hamza.jpg"
+
+# ------------------------------------------------------------------------------
+# Liens sociaux
+# ------------------------------------------------------------------------------
+social:
+  linkedin: "https://www.linkedin.com/in/hamzaatig-88760559/"
+  github: ""  # https://github.com/username
+  twitter: ""  # https://twitter.com/username
+  website: ""  # Autre site web
+
+# ------------------------------------------------------------------------------
+# SEO & Site
+# ------------------------------------------------------------------------------
+title: "Hamza Atig"
+description: "Portfolio professionnel - Architecte solutions & securite cloud"
+description_en: "Professional portfolio - Solutions & cloud security architect"
+lang: fr
+url: "https://hamzaatig.github.io"
+baseurl: "/atig-hamza-portfolio-"
+logo: "/assets/img/hamza.jpg"
+
+# Google Analytics (laisser vide pour desactiver)
+google_analytics: "G-QCMTJ0CS7E"
+
+# Google Site Verification
+google_site_verification: "d6edf24a366eba56"
+
+# ------------------------------------------------------------------------------
+# Offres / Services
+# ------------------------------------------------------------------------------
+offers:
+  - name: "Security Checkup"
+    name_en: "Security Checkup"
+    duration: "5-10 jours"
+    duration_en: "5-10 days"
+    description: "Audit flash base OWASP/IAM pour reduire les risques sans ralentir les equipes."
+    description_en: "OWASP/IAM-based flash audit to reduce risk without slowing teams down."
+    deliverables: "Rapport de vulnerabilites, roadmap de remediation, quick wins (mTLS, Keycloak, OAuth2)."
+    deliverables_en: "Vulnerability report, remediation roadmap, quick wins (mTLS, Keycloak, OAuth2)."
+
+  - name: "Modernization Blueprint"
+    name_en: "Modernization Blueprint"
+    duration: "3-4 semaines"
+    duration_en: "3-4 weeks"
+    description: "Etude de faisabilite et architecture cible pour sortir du legacy."
+    description_en: "Feasibility study and target architecture to exit legacy stacks."
+    deliverables: "HLD, POC microservice, strategie de deploiement Kubernetes/ArgoCD."
+    deliverables_en: "HLD, microservice POC, Kubernetes/ArgoCD deployment strategy."
+
+  - name: "Software Factory DevSecOps"
+    name_en: "DevSecOps Software Factory"
+    duration: "3-6 semaines"
+    duration_en: "3-6 weeks"
+    description: "Chaine CI/CD securisee cles en main avec IaC et scans de securite."
+    description_en: "Secure CI/CD pipeline, IaC, and security scans ready to scale."
+    deliverables: "Pipelines GitLab/Jenkins, policy CVE, Terraform, templates de deploiement."
+    deliverables_en: "GitLab/Jenkins pipelines, CVE policy, Terraform, deployment templates."
+
+# ------------------------------------------------------------------------------
+# Experiences professionnelles
+# ------------------------------------------------------------------------------
+experiences:
+  - company: "Amundi"
+    role: "Technical Architect"
+    role_en: "Technical Architect"
+    period: "depuis juin 2022"
+    period_en: "since June 2022"
+    icon: "building-columns"  # Font Awesome icon
+    description: "Architecture modulaire et modernisation du stack (Java 17, Spring Boot, conteneurs)"
+    description_en: "Modular architecture and stack modernization (Java 17, Spring Boot, containers)"
+    highlights:
+      - "Securisation des flux et gouvernance DevSecOps (OWASP, CVE)"
+      - "APIs et integrations critiques (OpenAPI, flux B2B)"
+    highlights_en:
+      - "Secured flows and DevSecOps governance (OWASP, CVE)"
+      - "Critical APIs and B2B integrations (OpenAPI)"
+
+  - company: "Credit Agricole Assurance"
+    role: "Technical Architect"
+    role_en: "Technical Architect"
+    period: "2022 - 2023"
+    period_en: "2022 - 2023"
+    icon: "lightbulb"
+    description: "Architecture de plateformes d'investissement a haut volume"
+    description_en: "High-volume investment platform architecture"
+    highlights:
+      - "Migration vers cloud prive, SSO/IAM, modernisation middleware"
+    highlights_en:
+      - "Private cloud migration, SSO/IAM, middleware modernization"
+
+  - company: "Allianz Trade"
+    role: "Technical Lead / Architect"
+    role_en: "Technical Lead / Architect"
+    period: "05/2022 - 09/2022"
+    period_en: "05/2022 - 09/2022"
+    icon: "shield-halved"
+    description: "Modernisation d'une plateforme B2B de garanties financieres"
+    description_en: "Modernization of a mission-critical B2B guarantees platform"
+    highlights:
+      - "Migration legacy Java 6/EJB vers Java 14/Spring Boot"
+      - "Transition AWS avec Terraform, API Gateway, Lambda, RDS"
+    highlights_en:
+      - "Legacy Java 6/EJB migration to Java 14/Spring Boot"
+      - "AWS transition with Terraform, API Gateway, Lambda, RDS"
+
+  - company: "Orange Bank"
+    role: "Tech Lead"
+    role_en: "Tech Lead"
+    period: "2019 - 2022"
+    period_en: "2019 - 2022"
+    icon: "building-columns"
+    description: "Architecture distribuee, integration et event-driven (Kafka)"
+    description_en: "Distributed architecture, integration and event-driven (Kafka)"
+    highlights:
+      - "CI/CD, observabilite, securisation des echanges"
+    highlights_en:
+      - "CI/CD, observability, secured exchanges"
+
+  - company: "INNSO (Foundever)"
+    role: "Expert technique"
+    role_en: "Technical Expert"
+    period: "09/2017 - 11/2019"
+    period_en: "09/2017 - 11/2019"
+    icon: "headset"
+    description: "Plateforme SaaS omnicanale pour centres d'appels"
+    description_en: "Omnichannel SaaS platform for call centers"
+    highlights:
+      - "Architecture microservices et mediation de flux complexes"
+      - "SSO SAML v2, tests d'intrusion et observabilite ELK/Grafana"
+    highlights_en:
+      - "Microservices architecture and complex flow mediation"
+      - "SAML v2 SSO, penetration testing, ELK/Grafana observability"
+
+# ------------------------------------------------------------------------------
+# Competences
+# ------------------------------------------------------------------------------
+skills:
+  expert:
+    - "Architecture de solutions"
+    - "Securite applicative & IAM"
+    - "Integration & API design"
+    - "DevSecOps & CI/CD"
+    - "Cloud & Infrastructure as Code"
+    - "Observabilite & Resilience"
+    - "Optimisation des performances"
+  expert_en:
+    - "Solution architecture"
+    - "Application security & IAM"
+    - "Integration & API design"
+    - "DevSecOps & CI/CD"
+    - "Cloud & Infrastructure as Code"
+    - "Observability & Resilience"
+    - "Performance optimization"
+  standard:
+    - "Java / Spring"
+    - "Node.js"
+    - "Kafka"
+    - "Keycloak / OAuth2"
+    - "Terraform / Kubernetes"
+    - "Airflow"
+    - "API Gateway / MuleSoft"
+    - "Git / GitLab / GitHub"
+    - "SQL / NoSQL"
+    - "Agile / SAFe"
+
+# ------------------------------------------------------------------------------
+# Formation
+# ------------------------------------------------------------------------------
+education:
+  - year: "2011"
+    degree: "Diplome d'ingenieur en informatique"
+    degree_en: "Computer Engineering Degree"
+    school: "Ecole Nationale des Sciences de l'Informatique (ENSI, Tunis)"
+    school_en: "National School of Computer Sciences (ENSI, Tunis)"
+
+  - year: "2008"
+    degree: "Classes preparatoires aux etudes d'ingenieurs"
+    degree_en: "Preparatory classes for engineering studies"
+    school: ""
+    school_en: ""
+
+  - year: "2006"
+    degree: "Baccalaureat section Mathematiques"
+    degree_en: "High School Diploma, Mathematics Section"
+    school: ""
+    school_en: ""
+
+# ------------------------------------------------------------------------------
+# Certifications
+# ------------------------------------------------------------------------------
+certifications:
+  - name: "IBM Cybersecurity Analyst"
+    description: "Specialisation en analyse et detection des menaces"
+    description_en: "Specialization in threat analysis and detection"
+
+# ------------------------------------------------------------------------------
+# Cas d'usage / Use Cases
+# ------------------------------------------------------------------------------
+use_cases:
+  - title: "Modernisation d'un SI finance (Asset Management)"
+    title_en: "Finance platform modernization (Asset Management)"
+    context: "Plateforme critique de gestion d'actifs traitant plusieurs milliards d'euros, architecture legacy Struts2/Java 8."
+    context_en: "Mission-critical asset management platform handling billions in assets, legacy Struts2/Java 8 architecture."
+    approach:
+      - "Blueprint d'architecture et decoupage par domaines metier"
+      - "Migration progressive vers Spring Boot 3 / Java 17 containerise"
+      - "Deploiement Kubernetes avec ArgoCD et pipelines GitLab CI/CD"
+    approach_en:
+      - "Architecture blueprint and domain-driven decoupling"
+      - "Phased migration to Spring Boot 3 / Java 17 containerized stack"
+      - "Kubernetes deployment with ArgoCD and GitLab CI/CD pipelines"
+    results:
+      - "Reduction de 60% du temps de deploiement"
+      - "Zero interruption de service pendant la migration"
+      - "Gouvernance DevSecOps avec scans SAST/DAST integres"
+    results_en:
+      - "60% reduction in deployment time"
+      - "Zero service disruption during migration"
+      - "DevSecOps governance with integrated SAST/DAST scans"
+
+  - title: "Securite & IAM pour une plateforme assurance"
+    title_en: "Security & IAM for an insurance platform"
+    context: "Plateforme d'investissement a fort volume, echanges B2B sensibles avec partenaires financiers."
+    context_en: "High-volume investment platform, sensitive B2B exchanges with financial partners."
+    approach:
+      - "Audit OWASP Top 10 et cartographie des vulnerabilites"
+      - "Deploiement SSO centralise via Keycloak (OAuth2/OIDC, MFA)"
+      - "Securisation mTLS des flux inter-applicatifs"
+    approach_en:
+      - "OWASP Top 10 audit and vulnerability mapping"
+      - "Centralized SSO deployment via Keycloak (OAuth2/OIDC, MFA)"
+      - "mTLS securing inter-application flows"
+    results:
+      - "100% des endpoints critiques securises"
+      - "Conformite reglementaire validee"
+      - "Tracabilite complete des acces (audit logs)"
+    results_en:
+      - "100% of critical endpoints secured"
+      - "Regulatory compliance validated"
+      - "Full access traceability (audit logs)"
+
+  - title: "Observabilite & fiabilisation SaaS multi-pays"
+    title_en: "Multi-country SaaS observability & reliability"
+    context: "Plateforme CRM omnicanale pour centres d'appels internationaux, trafic multi-pays a forts volumes."
+    context_en: "Omnichannel CRM platform for international call centers, high-volume multi-country traffic."
+    approach:
+      - "Stack ELK (Elasticsearch, Logstash, Kibana) + Grafana"
+      - "Definition de SLOs et alerting proactif via Dynatrace"
+      - "Optimisation SQL et indexation memoire (CQEngine)"
+    approach_en:
+      - "ELK Stack (Elasticsearch, Logstash, Kibana) + Grafana"
+      - "SLO definition and proactive alerting via Dynatrace"
+      - "SQL optimization and in-memory indexing (CQEngine)"
+    results:
+      - "Temps de detection des incidents reduit de 70%"
+      - "Performance applicative amelioree de 40%"
+      - "Tests de charge JMeter validant la stabilite sous pic"
+    results_en:
+      - "70% reduction in incident detection time"
+      - "40% improvement in application performance"
+      - "JMeter load tests validating stability under peak traffic"
+
+# ------------------------------------------------------------------------------
+# Projets / Clients
+# ------------------------------------------------------------------------------
+projects:
+  - client: "Amundi"
+    sector: "Asset management"
+    sector_en: "Asset management"
+    mission: "Architecture solution, modernisation, DevSecOps"
+    mission_en: "Solution architecture, modernization, DevSecOps"
+
+  - client: "Credit Agricole Assurance"
+    sector: "Assurance / Finance"
+    sector_en: "Insurance / Finance"
+    mission: "Architecture, IAM, migration cloud prive"
+    mission_en: "Architecture, IAM, private cloud migration"
+
+  - client: "Allianz Trade"
+    sector: "B2B Finance"
+    sector_en: "B2B Finance"
+    mission: "Modernisation plateforme, cloud AWS"
+    mission_en: "Platform modernization, AWS cloud"
+
+  - client: "Orange Bank"
+    sector: "Banque en ligne"
+    sector_en: "Online banking"
+    mission: "Integration, event-driven, securite"
+    mission_en: "Integration, event-driven, security"
+
+  - client: "INNSO (Foundever)"
+    sector: "SaaS / CRM"
+    sector_en: "SaaS / CRM"
+    mission: "Architecture microservices, observabilite"
+    mission_en: "Microservices architecture, observability"
+
+# ------------------------------------------------------------------------------
+# FAQ (pour schema.org)
+# ------------------------------------------------------------------------------
+faq:
+  - question: "Travaillez-vous uniquement au forfait?"
+    question_en: "Do you work only on fixed-price packages?"
+    answer: "Je privilegie les offres forfaitaires, mais je peux intervenir en mission courte si le perimetre est clair et cadre."
+    answer_en: "I prioritize fixed-price offers, but I can take short missions when the scope is clear."
+
+  - question: "Quel est le delai moyen pour un diagnostic?"
+    question_en: "How long does a diagnostic take?"
+    answer: "Entre 5 et 10 jours selon la taille et la complexite de la plateforme."
+    answer_en: "Typically 5 to 10 days depending on platform size and complexity."
+
+  - question: "Intervenez-vous sur des environnements non-Java?"
+    question_en: "Do you work beyond Java stacks?"
+    answer: "Oui. J'interviens sur architectures cloud, IAM, CI/CD et integration, quel que soit le langage."
+    answer_en: "Yes. I focus on cloud architecture, IAM, CI/CD and integration across stacks."
+
+# ------------------------------------------------------------------------------
+# Theme & Plugins
+# ------------------------------------------------------------------------------
+# theme: minima  # Desactive - on utilise notre propre layout et CSS
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+# ------------------------------------------------------------------------------
+# Build settings
+# ------------------------------------------------------------------------------
+markdown: kramdown
+permalink: pretty
