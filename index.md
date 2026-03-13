@@ -41,7 +41,7 @@ title: "Bienvenue sur mon portfolio"
   </div>
 </div>
 
-Pour plus de détails: [voir la stratégie](./strategie).
+Pour plus de détails: [voir la stratégie]({{ "/strategie" | relative_url }}).
 
 ---
 ## 💼 Expériences clés
