@@ -1,133 +1,262 @@
-# 🌐 Portfolio – Hamza Atig
+# Portfolio Template - Jekyll
 
-Bienvenue sur mon portfolio personnel, réalisé avec **Jekyll** et hébergé via **GitHub Pages**. Ce site présente mon parcours, mes expériences clés, mes compétences techniques, ainsi qu’un lien vers mon CV.
+Un template de portfolio professionnel moderne, bilingue (FR/EN), optimise pour le SEO et entierement personnalisable via un fichier de configuration.
 
-🔗 **Accès en ligne :** [https://hamzaatig.github.io/atig-hamza-portfolio-/](https://hamzaatig.github.io/atig-hamza-portfolio-/)
+## Demo
 
----
+[Voir le site en ligne](https://hamzaatig.github.io/atig-hamza-portfolio-/)
 
-## ✨ Présentation
+## Fonctionnalites
 
-Je suis **Hamza Atig**, architecte solutions & sécurité cloud avec 14 ans d'expérience. Passionné par la conception d’architectures robustes, la performance applicative et l’optimisation continue, j’ai construit ce site pour centraliser et partager :
+- **Bilingue** : Support FR/EN avec switch de langue
+- **Dark Mode** : Theme clair/sombre avec persistance
+- **SEO Optimise** : Schema.org, Open Graph, sitemap, meta tags
+- **Responsive** : Mobile-first, adaptatif tous ecrans
+- **Performance** : CSS externe, lazy loading images
+- **Accessible** : Focus states, reduced motion support
+- **Animations** : Fade-in, hover effects, transitions fluides
+- **Configurable** : Toutes les donnees dans `_config.yml`
 
-- Mon parcours professionnel
-- Mes expertises technologiques
-- Mon CV au format PDF
-- Mes coordonnées
+## Installation rapide
 
----
+### Prerequis
 
-## 🛠️ Stack technique
+- Ruby >= 2.7
+- Bundler (`gem install bundler`)
 
-- [x] **Jekyll** (site statique)
-- [x] **GitHub Pages** pour l’hébergement gratuit
-- [x] HTML/CSS custom (avec dégradé, responsive & effet burger menu)
-- [x] Markdown enrichi avec icônes et emojis
-- [x] Version mobile responsive
-- [x] Page 404 personnalisée 😄
-
----
-
-## 📁 Arborescence
+### Etapes
 
 ```bash
-.
-├── _layouts/             # Templates HTML (default.html)
-├── _posts/               # Articles de blog (facultatif)
-├── assets/               # Fichiers statiques (ex: CV PDF)
-├── index.md              # Page d'accueil
-├── about.md              # À propos
-├── contact.md            # Contact
-├── projects.md           # Projets
-├── 404.html              # Page 404 personnalisée
-├── _config.yml           # Configuration Jekyll
-```
+# 1. Cloner le repo
+git clone https://github.com/votre-username/portfolio-template.git
+cd portfolio-template
 
----
-
-## ⚙️ Choix techniques & déploiement
-
-### 🔧 Stack choisie
-
-| Élément                  | Choix                             | Raison principale |
-|--------------------------|------------------------------------|--------------------|
-| **Générateur de site**   | [Jekyll](https://jekyllrb.com)     | Léger, statique, intégration native avec GitHub Pages |
-| **Thème**                | Custom (à partir de Minima)        | Plus de liberté sur le design & structure |
-| **Langages**             | Markdown, HTML, CSS                | Markdown pour le contenu, HTML/CSS pour le style avancé |
-| **Fonts & Icônes**       | [Google Fonts – Roboto](https://fonts.google.com/specimen/Roboto), [Font Awesome](https://fontawesome.com) | Typographie moderne et icônes stylées |
-| **Responsive**           | CSS Media Queries + Burger Menu    | Navigation fluide sur mobile/tablette |
-| **Animation / Design**   | Dégradé de fond, `hero banner`     | Moderne & clair sans images lourdes |
-
----
-
-### 🚀 Déploiement GitHub Pages
-
-- Le dépôt est **public** pour permettre le **déploiement automatique via GitHub Pages**.
-- Le site est généré à partir de la branche `main`, racine `/`.
-- Une fois le code modifié en local, le déploiement se fait automatiquement après `git push`.
-
-#### 🧪 Développement local :
-- Utilisation de `bundle exec jekyll serve` pour prévisualiser le site.
-- Les fichiers `.md` sont transformés en `.html` par Jekyll.
-
----
-
-### 🧩 Pages personnalisées
-
-| Page              | Rôle                                  |
-|-------------------|----------------------------------------|
-| `index.md`        | Accueil avec présentation, expériences |
-| `about.md`        | Bio plus complète (à propos)           |
-| `projects.md`     | Section projets                        |
-| `strategie.md`    | Offres & stratégie                     |
-| `contact.md`      | Infos de contact + LinkedIn/email      |
-| `404.html`        | Page d’erreur fun & stylée 😄          |
-
----
-
-## 🚀 Déploiement local
-
-```bash
-# Installer les dépendances Ruby (nécessite Ruby + Bundler)
+# 2. Installer les dependances
 bundle install
 
-# Lancer le serveur local
+# 3. Personnaliser _config.yml (voir section suivante)
+
+# 4. Lancer en local
 bundle exec jekyll serve
 
-# Accéder au site
-http://localhost:4000
+# 5. Ouvrir http://localhost:4000
 ```
 
----
+## Personnalisation
 
-## 🔍 SEO et Référencement
+### 1. Informations personnelles
 
-Le site est optimisé pour les moteurs de recherche grâce aux éléments suivants :
+Editez `_config.yml` :
 
-- **`jekyll-seo-tag`** : Génère automatiquement les balises meta utiles (titre, description, OpenGraph, etc.)
-- **`jekyll-sitemap`** : Génère un fichier `sitemap.xml` listant toutes les pages à indexer
-- **Structure sémantique** : Titres hiérarchisés (`h1`, `h2`, etc.), contenu bien structuré
-- **URL propres** hébergées via **GitHub Pages**
-- **Accessibilité publique** à l’adresse suivante :  
-  👉 [https://hamzaatig.github.io/atig-hamza-portfolio-/](https://hamzaatig.github.io/atig-hamza-portfolio-/)
-
-✅ Bonne syntaxe PowerShell (Windows)
+```yaml
+author:
+  name: "Votre Nom"
+  title: "Votre Titre FR"
+  title_en: "Your Title EN"
+  email: "votre@email.com"
+  location: "Votre Ville, Pays"
+  photo: "/assets/img/votre-photo.jpg"
+  experience_start_year: 2015  # Annee de debut de carriere
 ```
-$env:JEKYLL_ENV="production"; bundle exec jekyll build
+
+### 2. Liens sociaux
+
+```yaml
+social:
+  linkedin: "https://www.linkedin.com/in/votre-profil/"
+  github: "https://github.com/votre-username"
+  twitter: ""  # Laisser vide si non utilise
 ```
 
+### 3. Offres / Services
+
+```yaml
+offers:
+  - name: "Nom de l'offre FR"
+    name_en: "Offer Name EN"
+    duration: "X jours/semaines"
+    duration_en: "X days/weeks"
+    description: "Description FR..."
+    description_en: "Description EN..."
+    deliverables: "Liste des livrables FR"
+    deliverables_en: "Deliverables list EN"
+```
+
+### 4. Experiences
+
+```yaml
+experiences:
+  - company: "Nom Entreprise"
+    role: "Votre Role FR"
+    role_en: "Your Role EN"
+    period: "2022 - 2024"
+    period_en: "2022 - 2024"
+    icon: "building"  # Icone Font Awesome (sans 'fa-')
+    description: "Description FR"
+    description_en: "Description EN"
+    highlights:
+      - "Point cle 1 FR"
+      - "Point cle 2 FR"
+    highlights_en:
+      - "Key point 1 EN"
+      - "Key point 2 EN"
+```
+
+### 5. Competences
+
+```yaml
+skills:
+  expert:
+    - "Competence expert 1"
+    - "Competence expert 2"
+  expert_en:
+    - "Expert skill 1"
+    - "Expert skill 2"
+  standard:
+    - "Competence standard 1"  # Meme en FR et EN generalement
+```
+
+### 6. Formation & Certifications
+
+```yaml
+education:
+  - year: "2020"
+    degree: "Diplome FR"
+    degree_en: "Degree EN"
+    school: "Ecole FR"
+    school_en: "School EN"
+
+certifications:
+  - name: "Nom Certification"
+    description: "Description FR"
+    description_en: "Description EN"
+```
+
+### 7. Photo de profil
+
+Remplacez le fichier :
+```
+assets/img/votre-photo.jpg
+```
+
+Format recommande : 400x400px, JPG optimise
+
+### 8. CV PDF
+
+Placez vos CV dans :
+```
+assets/cv/cv-votre-nom-fr.pdf
+assets/cv/cv-votre-nom-en.pdf
+```
+
+Puis mettez a jour les liens dans `about.md`, `about.en.md`, `contact.md`, `contact.en.md`.
+
+### 9. Favicon
+
+Remplacez `favicon.ico` a la racine.
+
+### 10. Google Analytics
+
+```yaml
+google_analytics: "G-XXXXXXXXXX"  # Ou vide pour desactiver
+```
+
+## Structure des fichiers
+
+```
+.
+├── _config.yml          # Configuration principale (A MODIFIER)
+├── _layouts/
+│   └── default.html     # Template principal
+├── assets/
+│   ├── css/
+│   │   └── style.css    # Styles CSS
+│   ├── cv/              # CV PDF
+│   └── img/             # Images (photo profil)
+├── index.md             # Page d'accueil FR
+├── index.en.md          # Page d'accueil EN
+├── about.md             # A propos FR
+├── about.en.md          # A propos EN
+├── strategie.md         # Offres FR
+├── strategie.en.md      # Offres EN
+├── cas-usage.md         # Cas d'usage FR
+├── use-cases.en.md      # Cas d'usage EN
+├── projects.md          # Projets FR
+├── projects.en.md       # Projets EN
+├── contact.md           # Contact FR
+├── contact.en.md        # Contact EN
+└── 404.html             # Page 404
+```
+
+## Deploiement
+
+### GitHub Pages
+
+1. Pushez le code sur GitHub
+2. Allez dans Settings > Pages
+3. Source: `main` branch, `/ (root)`
+4. Le site sera disponible sur `https://username.github.io/repo-name/`
+
+### Netlify / Vercel
+
+1. Connectez votre repo
+2. Build command: `bundle exec jekyll build`
+3. Publish directory: `_site`
+
+## Personnalisation avancee
+
+### Couleurs
+
+Editez les variables CSS dans `assets/css/style.css` :
+
+```css
+:root {
+  --accent: #3498db;        /* Couleur principale */
+  --cta-bg: #3498db;        /* Bouton CTA */
+  --badge-expert: #2c3e50;  /* Badges expert */
+  /* ... */
+}
+```
+
+### Layout
+
+Modifiez `_layouts/default.html` pour :
+- Changer la structure de navigation
+- Modifier le hero banner
+- Ajuster le footer
+
+### Ajouter une page
+
+1. Creez `nouvelle-page.md` et `nouvelle-page.en.md`
+2. Ajoutez le front matter :
+```yaml
+---
+layout: default
+title: "Titre"
+permalink: /nouvelle-page
+lang: fr
+alternate: /en/new-page
+---
+```
+3. Ajoutez le lien dans le menu (`_layouts/default.html`)
+
+## Technologies
+
+- [Jekyll](https://jekyllrb.com/) - Generateur de site statique
+- [GitHub Pages](https://pages.github.com/) - Hebergement
+- [Font Awesome](https://fontawesome.com/) - Icones
+- [Google Fonts](https://fonts.google.com/) - Typographie (Roboto)
+
+## Licence
+
+MIT License - Libre d'utilisation et modification.
+
+## Credits
+
+Template cree par [Hamza Atig](https://www.linkedin.com/in/hamzaatig-88760559/)
+
 ---
 
-## 📄 Licence
+## Support
 
-Ce projet est open-source sous licence **GPL-3.0**.
-
----
-
-## 🙌 Remerciements
-
-Merci à [Jekyll](https://jekyllrb.com) et [GitHub Pages](https://pages.github.com) pour cette stack simple, efficace et 100 % gratuite 💙
-
----
-
-> ✉️ Pour toute question, n’hésitez pas à me contacter via [hamza.atig@gmail.com](mailto:hamza.atig@gmail.com)
+Pour toute question : ouvrez une issue sur GitHub.
