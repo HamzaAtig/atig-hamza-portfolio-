@@ -10,7 +10,7 @@ hero_subtitle: "<span class=\"exp-years\" data-exp-start-year=\"2011\" data-exp-
 
 
 <div style="display: flex; align-items: center; gap: 2rem; margin-top: 2rem;">
-   <img src="{{ site.baseurl }}/assets/img/hamza.jpg" alt="Hamza Atig" style="width: 140px; height: 140px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
+   <img src="{{ site.baseurl }}/assets/img/hamza.jpg" alt="Hamza Atig" width="140" height="140" loading="lazy" decoding="async" style="width: 140px; height: 140px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
 
   <div>
     <h2>👨‍💻 À propos de moi</h2>
