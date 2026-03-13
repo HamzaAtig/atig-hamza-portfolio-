@@ -321,14 +321,29 @@
       (function () {
         const navLinks = document.querySelectorAll(".nav-right a[href]");
         const currentPath = window.location.pathname;
+        const siteRoot = "{{ '/' | relative_url }}";
+        const enRoot = "{{ '/en/' | relative_url }}";
+
+        function normalize(path) {
+          if (!path) return "/";
+          if (path.length > 1 && path.endsWith("/")) return path.slice(0, -1);
+          return path;
+        }
+
+        const current = normalize(currentPath);
+        const rootNorm = normalize(siteRoot);
+        const enRootNorm = normalize(enRoot);
 
         navLinks.forEach(function (link) {
           const href = link.getAttribute("href");
           if (!href || href === "#") return;
-
-          // Check if current path matches or starts with link href
-          if (currentPath === href ||
-              (href !== "/" && href !== "/en/" && currentPath.startsWith(href))) {
+          const hrefNorm = normalize(href);
+          const isRoot = hrefNorm === rootNorm || hrefNorm === enRootNorm;
+          if (isRoot) {
+            if (current === hrefNorm) link.classList.add("active");
+            return;
+          }
+          if (current === hrefNorm || current.startsWith(hrefNorm + "/")) {
             link.classList.add("active");
           }
         });
