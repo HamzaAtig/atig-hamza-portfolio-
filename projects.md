@@ -2,6 +2,7 @@
 layout: default
 title: "Projets"
 permalink: /projects
+description: "Projets récents et missions par client, orientés modernisation, sécurité et intégration."
 ---
 
 ## 🚀 Projets récents (extraits)

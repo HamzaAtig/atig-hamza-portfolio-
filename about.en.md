@@ -3,6 +3,7 @@ layout: default
 title: "About"
 permalink: /en/about
 lang: en
+description: "Solutions & cloud security architect. Modernization, IAM, integration, and platform reliability."
 ---
 
 

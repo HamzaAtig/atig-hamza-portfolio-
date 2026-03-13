@@ -2,6 +2,7 @@
 layout: default
 title: "Contact"
 permalink: /contact
+description: "Contactez Hamza Atig pour un diagnostic, une mission forfaitaire ou un accompagnement."
 ---
 
 ## ✉️ Contactez-moi

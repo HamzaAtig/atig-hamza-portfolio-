@@ -2,6 +2,7 @@
 layout: default
 title: "À propos"
 permalink: /about
+description: "Architecte solutions & sécurité cloud. Modernisation, IAM, intégration et fiabilisation de plateformes critiques."
 ---
 
 

@@ -2,6 +2,12 @@ title: Hamza Atig
 email: hamza.atig@gmail.com
 description: >-
   Portfolio professionnel d'Hamza Atig — Architecte solutions & securite cloud
+lang: fr
+logo: /assets/img/hamza.jpg
+social:
+  name: Hamza Atig
+  links:
+    - https://www.linkedin.com/in/hamzaatig-88760559/
 baseurl: "/atig-hamza-portfolio-"
 url: "https://hamzaatig.github.io"
 

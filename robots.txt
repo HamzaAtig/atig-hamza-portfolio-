@@ -3,7 +3,6 @@ User-agent: *
 Allow: /
 
 # Empêcher l’indexation des fichiers techniques (optionnel selon ton projet)
-Disallow: /assets/
 Disallow: /_site/
 Disallow: /Gemfile
 Disallow: /Gemfile.lock
