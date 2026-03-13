@@ -308,6 +308,69 @@
     </script>
 
     {% seo %}
+    {% if page.alternate %}
+      <link
+        rel="alternate"
+        hreflang="{{ page.lang | default: site.lang | default: 'fr' }}"
+        href="{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+      />
+      <link
+        rel="alternate"
+        hreflang="{% if page.lang == 'en' %}fr{% else %}en{% endif %}"
+        href="{{ site.url }}{{ site.baseurl }}{{ page.alternate }}"
+      />
+      <link
+        rel="alternate"
+        hreflang="x-default"
+        href="{{ site.url }}{{ '/' | relative_url }}"
+      />
+    {% endif %}
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Hamza Atig",
+        "jobTitle": "{% if page.lang == 'en' %}Solutions & cloud security architect{% else %}Architecte solutions & securite cloud{% endif %}",
+        "url": "{{ site.url }}{{ '/' | relative_url }}",
+        "image": "{{ site.url }}{{ site.logo | relative_url }}",
+        "email": "mailto:{{ site.email }}",
+        "sameAs": [{% for link in site.social.links %}"{{ link }}"{% unless forloop.last %}, {% endunless %}{% endfor %}],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Paris",
+          "addressCountry": "FR"
+        },
+        "knowsAbout": [
+          "Cloud architecture",
+          "DevSecOps",
+          "IAM",
+          "API design",
+          "System modernization",
+          "Observability",
+          "Performance optimization"
+        ]
+      }
+    </script>
+    {% if page.url contains 'strategie' or page.url contains 'strategy' %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "{% if page.lang == 'en' %}Cloud modernization, security and DevSecOps{% else %}Modernisation cloud, securite et DevSecOps{% endif %}",
+        "provider": {
+          "@type": "Person",
+          "name": "Hamza Atig"
+        },
+        "areaServed": "FR",
+        "serviceType": [
+          "Security checkup",
+          "Modernization blueprint",
+          "DevSecOps software factory"
+        ]
+      }
+    </script>
+    {% endif %}
   </head>
 
   <body>
@@ -339,9 +402,15 @@
 
     <div class="hero-banner">
       <h1 class="hero-text">
-        <span class="icon">💼</span> Hamza Atig —
-        <span class="highlight">Architecte solutions & sécurité cloud</span>,
-        au service de la performance
+        {% if page.lang == "en" %}
+          <span class="icon">💼</span> Hamza Atig —
+          <span class="highlight">Solutions & cloud security architect</span>,
+          focused on performance
+        {% else %}
+          <span class="icon">💼</span> Hamza Atig —
+          <span class="highlight">Architecte solutions & sécurité cloud</span>,
+          au service de la performance
+        {% endif %}
       </h1>
     </div>
 

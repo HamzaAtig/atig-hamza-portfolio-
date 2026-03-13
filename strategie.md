@@ -3,6 +3,7 @@ layout: default
 title: "Offres & stratégie"
 permalink: /strategie
 description: "Offres forfaitaires, cibles, plan de prospection et process de mission pour modernisation et sécurité."
+alternate: /en/strategy
 ---
 
 ## 🎯 Objectif

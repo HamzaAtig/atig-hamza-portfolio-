@@ -4,6 +4,7 @@ title: "Offers & strategy"
 permalink: /en/strategy
 lang: en
 description: "Fixed‑price offers, targets, prospecting plan and delivery process for modernization and security."
+alternate: /strategie
 ---
 
 ## 🎯 Goal

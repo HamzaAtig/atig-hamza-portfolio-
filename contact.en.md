@@ -4,6 +4,7 @@ title: "Contact"
 permalink: /en/contact
 lang: en
 description: "Get in touch for a diagnostic, fixed‑price mission, or sprint support."
+alternate: /contact
 ---
 
 ## ✉️ Contact

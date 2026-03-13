@@ -2,6 +2,7 @@
 layout: default
 title: "Bienvenue sur mon portfolio"
 description: "Architecte solutions & sécurité cloud. Offres forfaitaires, modernisation, sécurité et DevSecOps."
+alternate: /en/
 ---
 
 <div style="display: flex; align-items: center; gap: 2rem; margin-top: 2rem;">

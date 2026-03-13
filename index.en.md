@@ -4,6 +4,7 @@ title: "Welcome"
 permalink: /en/
 lang: en
 description: "Solutions & cloud security architect. Fixed‑price offers, modernization, security and DevSecOps."
+alternate: /
 ---
 
 <div style="display: flex; align-items: center; gap: 2rem; margin-top: 2rem;">

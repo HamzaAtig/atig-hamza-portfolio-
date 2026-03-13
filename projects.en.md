@@ -4,6 +4,7 @@ title: "Projects"
 permalink: /en/projects
 lang: en
 description: "Recent projects and client missions focused on modernization, security and integration."
+alternate: /projects
 ---
 
 ## 🚀 Recent projects (excerpts)
