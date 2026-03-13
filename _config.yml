@@ -1,17 +1,11 @@
-title: Portfolio Hamza Atig
+title: Hamza Atig
 email: hamza.atig@gmail.com
 description: >-
-  Portfolio professionnel d'Hamza Atig — Architecte Java/Cloud
+  Portfolio professionnel d'Hamza Atig — Architecte solutions & securite cloud
+baseurl: ""
+url: ""
 
-baseurl: "/atig-hamza-portfolio-"
-url: "https://hamzaatig.github.io"
-
-
-# Thème par défaut
 theme: minima
-
-# Plugins autorisés par GitHub Pages
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap

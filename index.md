@@ -8,65 +8,89 @@ title: "Bienvenue sur mon portfolio"
 
   <div>
     <h2>👋 Hamza Atig</h2>
-    <p><strong>Architecte technique Java/Cloud avec 13 ans d’expérience</strong></p>
-    <p>Passionné par les architectures robustes, l’automatisation, et l’optimisation de la performance.</p>
+    <p><strong>Architecte solutions & sécurité cloud avec 14 ans d’expérience</strong></p>
+    <p>Je modernise, sécurise et fiabilise les plateformes critiques avec des offres packagées au forfait.</p>
   </div>
 </div>
+
+---
+## 🎯 Positionnement
+
+- Architecte solutions pour PME, scale‑ups et acteurs B2B avec enjeux de sécurité et d’intégration.
+- Spécialiste des migrations legacy, de la résilience et de l’industrialisation DevSecOps.
+- J’utilise l’IA pour accélérer l’analyse, fiabiliser les diagnostics et améliorer la qualité des livrables.
+
+---
+## 🎯 Offres forfaitaires (exemples)
+
+<div class="offer-grid">
+  <div class="offer-card">
+    <h3>Security Checkup (5–10 jours)</h3>
+    <p>Audit flash basé OWASP/IAM pour réduire les risques sans ralentir les équipes.</p>
+    <div class="offer-meta">Livrables: rapport de vulnérabilités, roadmap de remédiation.</div>
+  </div>
+  <div class="offer-card">
+    <h3>Modernization Blueprint (3–4 semaines)</h3>
+    <p>Étude de faisabilité et architecture cible pour sortir du legacy.</p>
+    <div class="offer-meta">Livrables: HLD, POC microservice, stratégie Kubernetes/ArgoCD.</div>
+  </div>
+  <div class="offer-card">
+    <h3>Software Factory DevSecOps (3–6 semaines)</h3>
+    <p>Chaîne CI/CD sécurisée clés en main avec IaC et scans de sécurité.</p>
+    <div class="offer-meta">Livrables: pipelines, policy CVE, Terraform, templates.</div>
+  </div>
+</div>
+
+Pour plus de détails: [voir la stratégie](./strategie).
 
 ---
 ## 💼 Expériences clés
 
 ### 🏦 Amundi — Architecte technique *(depuis juin 2023)*
-- Conception d’architectures réutilisables pour la plateforme **Wealth**
-- Optimisation des performances via analyse mémoire (heap dumps, AWR)
-- Mise en place d’API REST documentées (Swagger/OpenAPI)
-- Coaching technique & alignement des équipes avec la vision produit
+- Architecture modulaire et modernisation du stack (Java 17, Spring Boot, conteneurs)
+- Sécurisation des flux et gouvernance DevSecOps (OWASP, CVE)
+- APIs et intégrations critiques (OpenAPI, flux B2B)
 
 ### 💡 Crédit Agricole Assurance — Architecte technique *(2022 – 2023)*
-- Migration vers un cloud privé
-- Monitoring, DevOps, gestion du carnet d’ordres SOLIAM
+- Architecture de plateformes d’investissement à haut volume
+- Migration vers cloud privé, SSO/IAM, modernisation middleware
 
 ### 🏦 Orange Bank — Tech Lead *(2019 – 2022)*
-- Architecture sécurisée autour de Kafka, AWS, Airflow
-- Mise en place de CI/CD et microservices Spring Boot
+- Architecture distribuée, intégration et event‑driven (Kafka)
+- CI/CD, observabilité, sécurisation des échanges
 
-
+---
 ## 🧠 Expertises clés
 
 <div class="skills expert">
-  <span>API Design</span>
-  <span>Architecture logicielle</span>
-  <span>Spring Boot / Security</span>
-  <span>CI/CD (GitLab, Jenkins)</span>
-  <span>Terraform / Kubernetes</span>
-  <span>AWS</span>
-  <span>Monitoring (Grafana, Dynatrace, ELK)</span>
-  <span>Sécurité (OAuth2, SSO, OWASP)</span>
+  <span>Architecture de solutions</span>
+  <span>Sécurité applicative & IAM</span>
+  <span>Intégration & API design</span>
+  <span>DevSecOps & CI/CD</span>
+  <span>Cloud & Infrastructure as Code</span>
+  <span>Observabilité & Résilience</span>
   <span>Optimisation des performances</span>
 </div>
 
 ---
-
 ## ⚙️ Compétences standards
 
 <div class="skills standard">
-  <span>Java / JEE</span>
-  <span>JPA / Hibernate</span>
+  <span>Java / Spring</span>
+  <span>Node.js</span>
   <span>Kafka</span>
+  <span>Keycloak / OAuth2</span>
+  <span>Terraform / Kubernetes</span>
   <span>Airflow</span>
-  <span>Quarkus</span>
-  <span>MuleSoft</span>
-  <span>Git / GitHub / GitLab</span>
-  <span>SQL / NoSQL (Oracle, PostgreSQL, MongoDB)</span>
+  <span>API Gateway / MuleSoft</span>
+  <span>Git / GitLab / GitHub</span>
+  <span>SQL / NoSQL</span>
   <span>Agile / SAFe</span>
 </div>
 
 ---
 
-
 ## 📬 Me contacter
 
 - **📧 Email** : hamza.atig@gmail.com  
-- [💼 LinkedIn](https://www.linkedin.com/in/hamza-%F0%9F%92%BB-atig-88760559/)  
-
-
+- [💼 LinkedIn](https://www.linkedin.com/in/hamzaatig-88760559/)  

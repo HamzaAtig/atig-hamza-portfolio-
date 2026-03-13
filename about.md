@@ -10,40 +10,44 @@ permalink: /about
 
   <div>
     <h2>👨‍💻 À propos de moi</h2>
-    <p>Avec plus de 13 ans d’expérience dans le développement et l’architecture Java, j’ai accompagné de nombreuses structures — de start-ups ambitieuses à des groupes bancaires d’envergure — dans la conception de plateformes robustes, performantes et évolutives.</p>
-    
-    <p>J’ai occupé plusieurs rôles techniques : développeur, lead technique, puis architecte, avec une reconnaissance constante pour la qualité de mes livrables, mon implication et ma capacité à aligner la vision technique avec les enjeux métier.</p>
+    <p>Architecte solutions & sécurité cloud avec 14 ans d’expérience, j’interviens sur des plateformes critiques où la performance, la résilience et la conformité sont centrales.</p>
+    <p>Mon rôle: stabiliser le run, sécuriser les échanges et construire des trajectoires de modernisation réalistes, sans rupture de service.</p>
   </div>
 </div>
 
 ---
 
-## 🔍 Domaines d’expertise
+## 🔍 Ce que j’apporte
 
-- **Développement Java Web** : Conception et maintenance d'applications web (finance, banque, call-centers).
-- **Optimisation des performances** : Analyse et amélioration d’algorithmes, tuning base de données, diagnostic applicatif.
-- **Monitoring et observabilité** : Dynatrace, AppDynamics, ELK, Splunk – pour l’analyse de logs, alerting et performance.
-- **CI/CD et déploiement** : GitLab CI/CD, Jenkins, Terraform – pour des environnements on-premise et cloud (notamment AWS).
-- **Bases de données** : Expérience sur des moteurs SQL (PostgreSQL, Oracle) et NoSQL (MongoDB, Redis).
-- **Intégration & CRM** : Connaissance des connecteurs et outils comme MuleSoft, Salesforce.
+- **Modernisation pragmatique** : passage legacy vers architectures cloud‑ready, découplage, industrialisation.
+- **Sécurité et IAM** : mise en place SSO/OAuth2, durcissement OWASP, gouvernance des accès.
+- **Intégration & interopérabilité** : API design, event‑driven, médiation et échanges B2B.
+- **Observabilité & fiabilité** : métriques, logs, alerting, SLO et plans de stabilisation.
 
 ---
 
-## 🚀 Vision & valeurs
+## 🤖 IA au service de la qualité
 
-Passionné par les technologies émergentes, je valorise les architectures résilientes, la performance applicative et le partage de savoirs en équipe. J’adopte les méthodologies agiles (Scrum, SAFe) avec un réel engagement dans la réussite collective.
+J’utilise l’IA pour accélérer l’analyse, fiabiliser les diagnostics et améliorer la qualité des livrables.
+L’IA est un accélérateur, pas un substitut: chaque recommandation est validée techniquement et adaptée au contexte.
 
-Je suis particulièrement motivé par les environnements dynamiques, les challenges techniques, et les projets à impact fort. Aujourd’hui, je continue d’évoluer dans des contextes où la **migration vers le cloud**, la **modularité**, et la **qualité logicielle** sont au cœur des enjeux.
+---
+
+## 🧭 Mon approche
+
+- Diagnostic rapide et factuel
+- Blueprint d’architecture et priorisation des quick wins
+- Livraison par paliers, avec transfert d’exploitation
 
 ---
 
 ## 📌 Infos complémentaires
 
-- 📍 **Localisation** : Paris et banlieue proche uniquement  
-- 💼 **Statut** : Disponible uniquement en freelance (pas de CDI)
-- 💬 **Langues** : Français 🇫🇷 / Anglais 🇬🇧
+- 📍 **Localisation** : Paris et proche banlieue
+- 💼 **Statut** : Freelance
+- 🤝 **Formats** : missions courtes, forfaits, ou accompagnement au sprint
+- 💬 **Langues** : Français / Anglais
 
 ---
 
-Merci de votre visite sur mon portfolio 🙏  
-N’hésitez pas à me contacter pour échanger sur de futures collaborations !
+Merci de votre visite sur mon portfolio. N’hésitez pas à me contacter pour échanger sur vos enjeux techniques.

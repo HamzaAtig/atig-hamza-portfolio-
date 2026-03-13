@@ -8,7 +8,7 @@ Bienvenue sur mon portfolio personnel, réalisé avec **Jekyll** et hébergé vi
 
 ## ✨ Présentation
 
-Je suis **Hamza Atig**, architecte technique Java/Cloud avec plus de 13 ans d'expérience. Passionné par la conception d’architectures robustes, la performance applicative et l’optimisation continue, j’ai construit ce site pour centraliser et partager :
+Je suis **Hamza Atig**, architecte solutions & sécurité cloud avec 14 ans d'expérience. Passionné par la conception d’architectures robustes, la performance applicative et l’optimisation continue, j’ai construit ce site pour centraliser et partager :
 
 - Mon parcours professionnel
 - Mes expertises technologiques
@@ -79,6 +79,7 @@ Je suis **Hamza Atig**, architecte technique Java/Cloud avec plus de 13 ans d'ex
 | `index.md`        | Accueil avec présentation, expériences |
 | `about.md`        | Bio plus complète (à propos)           |
 | `projects.md`     | Section projets                        |
+| `strategie.md`    | Offres & stratégie                     |
 | `contact.md`      | Infos de contact + LinkedIn/email      |
 | `404.html`        | Page d’erreur fun & stylée 😄          |
 
