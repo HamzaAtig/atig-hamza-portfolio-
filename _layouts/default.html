@@ -556,8 +556,10 @@
           const startYear = parseInt(el.dataset.expStartYear, 10);
           const startMonth = parseInt(el.dataset.expStartMonth || "1", 10);
           if (Number.isNaN(startYear)) return;
-          let years = now.getFullYear() - startYear;
-          if (now.getMonth() + 1 < startMonth) years -= 1;
+          const months =
+            (now.getFullYear() - startYear) * 12 +
+            (now.getMonth() + 1 - startMonth);
+          let years = Math.round(months / 12);
           if (years < 0) years = 0;
           el.textContent = String(years);
         });
