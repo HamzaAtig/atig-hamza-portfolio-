@@ -238,6 +238,29 @@
         color: #6b7785;
       }
 
+      .lang-switch {
+        display: flex;
+        gap: 0.35rem;
+        align-items: center;
+        margin-left: 0.5rem;
+      }
+
+      .lang-switch a {
+        text-decoration: none;
+        font-size: 0.85rem;
+        border: 1px solid #d8dee8;
+        padding: 0.2rem 0.45rem;
+        border-radius: 6px;
+        color: #2c3e50;
+        background: #fff;
+      }
+
+      .lang-switch a.active {
+        background: #2c3e50;
+        color: #fff;
+        border-color: #2c3e50;
+      }
+
       table {
         width: 100%;
         border-collapse: collapse;
@@ -312,11 +335,23 @@
         <div class="nav-left"><strong>Hamza Atig</strong></div>
         <div class="burger" onclick="toggleMenu()">☰</div>
         <div class="nav-right" id="nav-menu">
-          <a href="{{ '/' | relative_url }}">Accueil</a>
-          <a href="{{ '/about' | relative_url }}">À propos</a>
-          <a href="{{ '/strategie' | relative_url }}">Offres & stratégie</a>
-          <a href="{{ '/projects' | relative_url }}">Projets</a>
-          <a href="{{ '/contact' | relative_url }}">Contact</a>
+          {% if page.lang == "en" %}
+            <a href="{{ '/en/' | relative_url }}">Home</a>
+            <a href="{{ '/en/about' | relative_url }}">About</a>
+            <a href="{{ '/en/strategy' | relative_url }}">Offers & strategy</a>
+            <a href="{{ '/en/projects' | relative_url }}">Projects</a>
+            <a href="{{ '/en/contact' | relative_url }}">Contact</a>
+          {% else %}
+            <a href="{{ '/' | relative_url }}">Accueil</a>
+            <a href="{{ '/about' | relative_url }}">À propos</a>
+            <a href="{{ '/strategie' | relative_url }}">Offres & stratégie</a>
+            <a href="{{ '/projects' | relative_url }}">Projets</a>
+            <a href="{{ '/contact' | relative_url }}">Contact</a>
+          {% endif %}
+          <div class="lang-switch">
+            <a href="{{ '/' | relative_url }}" class="{% unless page.lang == 'en' %}active{% endunless %}">FR</a>
+            <a href="{{ '/en/' | relative_url }}" class="{% if page.lang == 'en' %}active{% endif %}">EN</a>
+          </div>
         </div>
       </div>
     </header>
