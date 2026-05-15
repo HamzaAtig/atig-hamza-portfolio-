@@ -4,8 +4,8 @@ title: "Architecte solutions, sécurité cloud & IA agentique freelance | Hamza 
 description: "Architecte freelance à Paris spécialisé en modernisation, sécurité cloud, DevSecOps et IA agentique (LangGraph, RAG, HITL). Offres forfaitaires et produits : Aegis Defend (SOAR autonome), AgentForge (multi-agents)."
 keywords: "architecte solutions freelance Paris, architecte cloud, sécurité cloud, IA agentique, LangGraph, RAG pgvector, HITL, multi-agents, SOAR, AgentForge, Aegis Defend, DevSecOps, IAM, modernisation legacy, Spring Boot"
 alternate: /en/
-hero_title: "Architecte solutions, sécurité cloud & IA agentique freelance à Paris"
-hero_subtitle: "Modernisation, DevSecOps, IAM et IA agentique pour plateformes critiques"
+hero_title: "Architecte IA agentique & sécurité cloud — freelance à Paris"
+hero_subtitle: "Des plateformes IA qui tiennent en production. Pas de prompt magic."
 ---
 
 <div style="display: flex; align-items: center; gap: 2rem; margin-top: 2rem;">

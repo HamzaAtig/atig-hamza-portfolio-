@@ -6,8 +6,8 @@ lang: en
 description: "Freelance architect in Paris specialized in modernization, cloud security, DevSecOps and agentic AI (LangGraph, RAG, HITL). Fixed-price packages and products: Aegis Defend (autonomous SOAR), AgentForge (multi-agent factory)."
 keywords: "solutions architect freelance Paris, cloud architect, cloud security, agentic AI, LangGraph, RAG pgvector, HITL, multi-agent, autonomous SOAR, AgentForge, Aegis Defend, DevSecOps, IAM, legacy modernization, Spring Boot"
 alternate: /
-hero_title: "Freelance solutions, cloud security & agentic AI architect in Paris"
-hero_subtitle: "Modernization, DevSecOps, IAM and agentic AI for critical platforms"
+hero_title: "Agentic AI & cloud security architect — freelance, Paris"
+hero_subtitle: "AI platforms that hold up in production. No prompt magic."
 ---
 
 <div style="display: flex; align-items: center; gap: 2rem; margin-top: 2rem;">
