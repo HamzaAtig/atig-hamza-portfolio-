@@ -10,8 +10,8 @@ hero_subtitle: "Finance, assurance, SaaS et plateformes B2B"
 
 ## Dernieres experiences (extraits)
 
-{% for exp in site.experiences limit:5 %}
-### {{ exp.company }} — {{ exp.role }} ({{ exp.period }})
+{% for exp in site.experiences %}
+### {% if exp.logo %}<img src="{{ exp.logo | relative_url }}" alt="{{ exp.company }}" width="28" height="28" style="vertical-align: middle; margin-right: 0.4rem; border-radius: 4px;"/>{% endif %}{{ exp.company }} — {{ exp.role }} ({{ exp.period }})
 - {{ exp.description }}
 {% for h in exp.highlights %}- {{ h }}
 {% endfor %}

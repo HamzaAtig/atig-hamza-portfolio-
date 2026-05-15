@@ -1,11 +1,12 @@
 ---
 layout: default
-title: "Offres & strategie"
+title: "Offres forfaitaires : securite, modernisation & IA agentique | Hamza Atig"
 permalink: /strategie
-description: "Offres forfaitaires, cibles, plan de prospection et process de mission pour modernisation et securite."
+description: "Offres forfaitaires pour PME, scale-ups et acteurs B2B : Security Checkup, Modernization Blueprint, DevSecOps Software Factory et pilotes IA agentique (Aegis Defend SOC, AgentForge). 3 modes d'intervention : IA seul, securite seul, IA × securite."
+keywords: "offres forfaitaires architecte cloud, security checkup, modernization blueprint, DevSecOps software factory, pilote SOC Aegis Defend, pilote AgentForge, IA et securite, securite pour IA, IA pour securite, freelance Paris, audit OWASP, IAM, modernisation legacy"
 alternate: /en/strategy
-hero_title: "Offres forfaitaires en securite, modernisation et DevSecOps"
-hero_subtitle: "Diagnostics rapides, blueprints d'architecture et software factory"
+hero_title: "Offres forfaitaires en securite, modernisation, DevSecOps et IA agentique"
+hero_subtitle: "Diagnostics rapides, blueprints d'architecture, software factory et pilotes IA"
 use_site_faq: true
 ---
 
@@ -43,32 +44,45 @@ Voir aussi: [cas d'usage]({{ "/cas-usage" | relative_url }}).
 
 ---
 
-## Plan de prospection (90 jours)
+## Parcours d'engagement
 
-1. **Cadrage & positionnement (semaines 1-2)**
-   Definir la cible prioritaire, formaliser les offres, et clarifier les benefices mesurables.
-2. **Assets & preuves (semaines 3-4)**
-   Preparer une page d'offres, 2 cas d'usage concrets, et un one-pager PDF.
-3. **Acquisition ciblee (mois 2)**
-   Prospection directe CTO, partenariats ESN/editeurs, contenus LinkedIn courts.
-4. **Conversion (mois 3)**
-   Session de diagnostic courte, proposition forfaitisee, lancement d'un pilote rapide.
+Ce que vit un client qui me contacte, etape par etape:
 
----
-
-## Process de mission
-
-1. Diagnostic express (2-5 jours)
-2. Blueprint d'architecture + priorisation
-3. Livraison par paliers (quick wins puis stabilisation durable)
-4. Transfert et documentation
+1. **Premier echange (30 min)**
+   Comprendre votre contexte, vos contraintes et ce qui vous freine. Sans engagement.
+2. **Diagnostic court (2-5 jours)**
+   Cartographie technique factuelle, identification des risques et des leviers prioritaires.
+3. **Proposition forfaitaire**
+   Perimetre clair, livrables nommes, jalons et criteres d'acceptation. Pas de regie deguisee.
+4. **Livraison par paliers**
+   Quick wins d'abord, puis stabilisation durable, sans interruption de service.
+5. **Transfert et autonomie**
+   Documentation, transfert d'exploitation et runbooks pour vos equipes.
 
 ---
 
-## IA au service de la fiabilite
+## IA & securite : 2 expertises, 3 modes d'intervention
 
-J'utilise l'IA pour accelerer l'analyse, fiabiliser les diagnostics et ameliorer la qualite des livrables.
-L'IA est un accelerateur, pas un substitut: chaque recommandation est validee techniquement et adaptee au contexte client.
+{% include svg-venn-ai-sec.html %}
+
+### Mode IA seul
+
+Architecture d'une plateforme agentique pour vos cas d'usage metier — assistant SOC, copilote dev, RAG metier, automatisation conditionnelle.
+Cadre : LangGraph, HITL, observabilite, guardrails, multi-LLM. Reference produit : [AgentForge]({{ "/archi-ia#agentforge" | relative_url }}).
+
+### Mode securite seul
+
+Modernisation, IAM, DevSecOps, audit OWASP, fiabilisation de plateformes critiques.
+Cadre : forfaits Security Checkup, Modernization Blueprint, Software Factory DevSecOps.
+
+### Mode combine — IA × securite
+
+C'est la ou la double expertise prend tout son sens :
+
+- **IA pour la securite** : SOAR agentique autonome, detection comportementale (UEBA), RAG ancre MITRE/KEV, escouades specialisees IAM/AppSec/ThreatIntel/DLP. Reference produit : [Aegis Defend]({{ "/archi-ia#aegis-defend" | relative_url }}).
+- **Securite pour l'IA** : guardrails LLM, defense anti-injection prompt, IAM pour agents, audit trail des decisions, controle humain (HITL), conformite des donnees, secret management des cles fournisseurs.
+
+L'IA reste un accelerateur, pas un substitut : chaque recommandation est validee techniquement et adaptee a votre contexte.
 
 ---
 

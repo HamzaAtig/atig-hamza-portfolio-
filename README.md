@@ -253,7 +253,7 @@ MIT License - Libre d'utilisation et modification.
 
 ## Credits
 
-Template cree par [Hamza Atig](https://www.linkedin.com/in/hamzaatig-88760559/)
+Template cree par [Hamza Atig](https://www.linkedin.com/in/hamza-atig-88760559/)
 
 ---
 

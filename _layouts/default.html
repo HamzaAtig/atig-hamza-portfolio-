@@ -30,7 +30,7 @@
     />
 
     <!-- Favicon -->
-    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon" />
+    <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml" />
 
     <!-- Open Graph / LinkedIn / Twitter -->
     <meta property="og:type" content="website" />
@@ -97,11 +97,15 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "{{ site.author.name }}",
-        "jobTitle": "{% if page.lang == 'en' %}Solutions & cloud security architect{% else %}Architecte solutions & securite cloud{% endif %}",
+        "jobTitle": "{% if page.lang == 'en' %}Solutions, cloud security & agentic AI architect{% else %}Architecte solutions, securite cloud & IA agentique{% endif %}",
         "url": "{{ site.url }}{{ '/' | relative_url }}",
         "image": "{{ site.url }}{{ site.logo | relative_url }}",
         "email": "mailto:{{ site.email }}",
-        "sameAs": [{% for link in site.social.links %}"{{ link }}"{% unless forloop.last %}, {% endunless %}{% endfor %}],
+        "sameAs": [
+          {% if site.social.linkedin %}"{{ site.social.linkedin }}"{% if site.social.github or site.social.calendly %}, {% endif %}{% endif %}
+          {% if site.social.github %}"{{ site.social.github }}"{% if site.social.calendly %}, {% endif %}{% endif %}
+          {% if site.social.calendly %}"{{ site.social.calendly }}"{% endif %}
+        ],
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Paris",
@@ -109,12 +113,43 @@
         },
         "knowsAbout": [
           "Cloud architecture",
+          "Solution architecture",
           "DevSecOps",
+          "Application security",
           "IAM",
+          "OAuth2",
+          "Keycloak",
           "API design",
-          "System modernization",
+          "Legacy system modernization",
           "Observability",
-          "Performance optimization"
+          "Performance optimization",
+          "Agentic AI",
+          "LangGraph",
+          "Retrieval-Augmented Generation (RAG)",
+          "pgvector",
+          "Human-in-the-Loop (HITL)",
+          "LLM guardrails",
+          "Multi-agent orchestration",
+          "Autonomous SOAR",
+          "MITRE ATT&CK",
+          "Kubernetes",
+          "Java",
+          "Spring Boot",
+          "FastAPI"
+        ],
+        "owns": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "Aegis Defend",
+            "description": "Autonomous agentic SOAR for SMBs — 18 AI agents, LangGraph, RAG, HITL",
+            "applicationCategory": "SecurityApplication"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "AgentForge",
+            "description": "Multi-agent software factory — LangGraph pipeline, OutputContract, HITL",
+            "applicationCategory": "DeveloperApplication"
+          }
         ]
       }
     </script>
@@ -123,7 +158,7 @@
       {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "{% if page.lang == 'en' %}Cloud modernization, security and DevSecOps{% else %}Modernisation cloud, securite et DevSecOps{% endif %}",
+        "name": "{% if page.lang == 'en' %}Cloud modernization, security, DevSecOps & agentic AI{% else %}Modernisation cloud, securite, DevSecOps et IA agentique{% endif %}",
         "provider": {
           "@type": "Person",
           "name": "{{ site.author.name }}"
@@ -132,7 +167,33 @@
         "serviceType": [
           "Security checkup",
           "Modernization blueprint",
-          "DevSecOps software factory"
+          "DevSecOps software factory",
+          "Agentic AI architecture",
+          "Aegis Defend SOC pilot",
+          "AgentForge early adopter pilot"
+        ]
+      }
+    </script>
+    {% endif %}
+    {% if page.url contains 'archi-ia' or page.url contains 'ai-architecture' %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "{% if page.lang == 'en' %}Agentic AI architecture for security and productivity{% else %}Architecture IA agentique pour la securite et la productivite{% endif %}",
+        "provider": {
+          "@type": "Person",
+          "name": "{{ site.author.name }}"
+        },
+        "areaServed": "FR",
+        "serviceType": [
+          "LangGraph orchestration",
+          "RAG with pgvector",
+          "LLM guardrails",
+          "Human-in-the-Loop",
+          "Multi-LLM integration",
+          "Autonomous SOAR design",
+          "Multi-agent software factory"
         ]
       }
     </script>
@@ -182,6 +243,7 @@
             <a href="{{ '/en/' | relative_url }}">Home</a>
             <a href="{{ '/en/about' | relative_url }}">About</a>
             <a href="{{ '/en/strategy' | relative_url }}">Offers & strategy</a>
+            <a href="{{ '/en/ai-architecture' | relative_url }}">AI architecture</a>
             <a href="{{ '/en/use-cases' | relative_url }}">Use cases</a>
             <a href="{{ '/en/projects' | relative_url }}">Projects</a>
             <a href="{{ '/en/contact' | relative_url }}">Contact</a>
@@ -189,6 +251,7 @@
             <a href="{{ '/' | relative_url }}">Accueil</a>
             <a href="{{ '/about' | relative_url }}">À propos</a>
             <a href="{{ '/strategie' | relative_url }}">Offres & stratégie</a>
+            <a href="{{ '/archi-ia' | relative_url }}">Archi IA</a>
             <a href="{{ '/cas-usage' | relative_url }}">Cas d’usage</a>
             <a href="{{ '/projects' | relative_url }}">Projets</a>
             <a href="{{ '/contact' | relative_url }}">Contact</a>
@@ -222,9 +285,9 @@
     {% unless page.url contains 'contact' %}
     <div class="cta-banner">
       {% if page.lang == "en" %}
-        <a href="{{ '/en/contact' | relative_url }}">Book a free diagnostic call</a>
+        <a href="{{ site.social.calendly }}" target="_blank" rel="noopener">Book a free diagnostic call</a>
       {% else %}
-        <a href="{{ '/contact' | relative_url }}">Réserver un diagnostic gratuit</a>
+        <a href="{{ site.social.calendly }}" target="_blank" rel="noopener">Réserver un diagnostic gratuit</a>
       {% endif %}
     </div>
     {% endunless %}

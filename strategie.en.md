@@ -1,12 +1,13 @@
 ---
 layout: default
-title: "Offers & strategy"
+title: "Fixed-price offers: security, modernization & agentic AI | Hamza Atig"
 permalink: /en/strategy
 lang: en
-description: "Fixed-price offers, targets, prospecting plan and delivery process for modernization and security."
+description: "Fixed-price offers for SMBs, scale-ups and B2B organizations: Security Checkup, Modernization Blueprint, DevSecOps Software Factory and agentic AI pilots (Aegis Defend SOC, AgentForge). 3 engagement modes: AI only, security only, AI × security."
+keywords: "fixed-price cloud architect offers, security checkup, modernization blueprint, DevSecOps software factory, Aegis Defend SOC pilot, AgentForge pilot, AI and security, security for AI, AI for security, freelance Paris, OWASP audit, IAM, legacy modernization"
 alternate: /strategie
-hero_title: "Fixed-price offers for security, modernization and DevSecOps"
-hero_subtitle: "Fast diagnostics, architecture blueprints and software factory"
+hero_title: "Fixed-price offers for security, modernization, DevSecOps and agentic AI"
+hero_subtitle: "Fast diagnostics, architecture blueprints, software factory and AI pilots"
 use_site_faq: true
 ---
 
@@ -44,32 +45,45 @@ See also: [use cases]({{ "/en/use-cases" | relative_url }}).
 
 ---
 
-## Prospecting plan (90 days)
+## Engagement journey
 
-1. **Positioning (weeks 1-2)**
-   Define target, package offers, and clarify measurable outcomes.
-2. **Assets & proof (weeks 3-4)**
-   Build offer page, 2 concrete use cases, and a one-pager PDF.
-3. **Targeted acquisition (month 2)**
-   Direct outreach to CTOs, partnerships with ESNs/vendors, short LinkedIn content.
-4. **Conversion (month 3)**
-   Short diagnostic session, fixed-price proposal, launch a quick pilot.
+What a client experiences when they reach out, step by step:
 
----
-
-## Delivery process
-
-1. Express diagnosis (2-5 days)
-2. Architecture blueprint + prioritization
-3. Phased delivery (quick wins then durable stabilization)
-4. Handover and documentation
+1. **First conversation (30 min)**
+   Understand your context, constraints, and current blockers. No commitment.
+2. **Short diagnostic (2-5 days)**
+   Fact-based technical mapping, identification of risks and priority levers.
+3. **Fixed-price proposal**
+   Clear scope, named deliverables, milestones, and acceptance criteria. No disguised T&M.
+4. **Phased delivery**
+   Quick wins first, then durable stabilization, with no service interruption.
+5. **Handover and autonomy**
+   Documentation, operational handover, and runbooks for your teams.
 
 ---
 
-## AI for reliability
+## AI & security: 2 expertises, 3 engagement modes
 
-I use AI to accelerate analysis, improve diagnostic reliability, and enhance delivery quality.
-AI is an accelerator, not a substitute: every recommendation is technically validated and adapted to the context.
+{% include svg-venn-ai-sec.html %}
+
+### AI only
+
+Architecture of an agentic platform for your business use cases — SOC assistant, dev copilot, domain RAG, conditional automation.
+Framework: LangGraph, HITL, observability, guardrails, multi-LLM. Product reference: [AgentForge]({{ "/en/ai-architecture#agentforge" | relative_url }}).
+
+### Security only
+
+Modernization, IAM, DevSecOps, OWASP audit, reliability of critical platforms.
+Framework: Security Checkup, Modernization Blueprint, DevSecOps Software Factory packages.
+
+### Combined mode — AI × security
+
+This is where the dual expertise really pays off:
+
+- **AI for security**: autonomous agentic SOAR, behavioral detection (UEBA), MITRE/KEV-grounded RAG, specialized squads IAM/AppSec/ThreatIntel/DLP. Product reference: [Aegis Defend]({{ "/en/ai-architecture#aegis-defend" | relative_url }}).
+- **Security for AI**: LLM guardrails, prompt injection defense, agent IAM, decision audit trail, human-in-the-loop, data compliance, provider key secret management.
+
+AI stays an accelerator, not a substitute: every recommendation is technically validated and adapted to your context.
 
 ---
 

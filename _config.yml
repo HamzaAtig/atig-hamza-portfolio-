@@ -10,10 +10,10 @@
 # ------------------------------------------------------------------------------
 author:
   name: "Hamza Atig"
-  title: "Architecte Solutions & Securite Cloud"
-  title_en: "Solutions & Cloud Security Architect"
-  tagline: "Modernisation, DevSecOps et IAM pour plateformes critiques"
-  tagline_en: "Modernization, DevSecOps, and IAM for critical platforms"
+  title: "Architecte cloud, securite & IA agentique"
+  title_en: "Cloud, security & agentic AI architect"
+  tagline: "Modernisation, securite, DevSecOps et IA agentique pour plateformes critiques"
+  tagline_en: "Modernization, security, DevSecOps and agentic AI for critical platforms"
   email: "hamza.atig@gmail.com"
   phone: ""  # Optionnel
   location: "Paris, France"
@@ -26,8 +26,9 @@ author:
 # Liens sociaux
 # ------------------------------------------------------------------------------
 social:
-  linkedin: "https://www.linkedin.com/in/hamzaatig-88760559/"
+  linkedin: "https://www.linkedin.com/in/hamza-atig-88760559/"
   github: "https://github.com/HamzaAtig"
+  calendly: "https://calendly.com/hamza-atig"
   twitter: ""  # https://twitter.com/username
   website: ""  # Autre site web
 
@@ -35,8 +36,10 @@ social:
 # SEO & Site
 # ------------------------------------------------------------------------------
 title: "Hamza Atig"
-description: "Portfolio professionnel - Architecte solutions & securite cloud"
-description_en: "Professional portfolio - Solutions & cloud security architect"
+description: "Hamza Atig — Architecte solutions, securite cloud & IA agentique freelance a Paris. Modernisation, DevSecOps, IAM, LangGraph, RAG, HITL. Produits : Aegis Defend (SOAR autonome) et AgentForge (software factory multi-agents)."
+description_en: "Hamza Atig — Solutions, cloud security & agentic AI architect freelance in Paris. Modernization, DevSecOps, IAM, LangGraph, RAG, HITL. Products: Aegis Defend (autonomous SOAR) and AgentForge (multi-agent software factory)."
+keywords: "architecte solutions, architecte cloud, securite cloud, IA agentique, agentic AI, LangGraph, RAG, pgvector, HITL, guardrails LLM, SOAR, multi-agents, AgentForge, Aegis Defend, DevSecOps, IAM, Keycloak, OWASP, Kubernetes, freelance Paris, modernisation legacy, Spring Boot, Java, FastAPI"
+keywords_en: "solutions architect, cloud architect, cloud security, agentic AI, LangGraph, RAG, pgvector, HITL, LLM guardrails, autonomous SOAR, multi-agent, AgentForge, Aegis Defend, DevSecOps, IAM, Keycloak, OWASP, Kubernetes, freelance Paris, legacy modernization, Spring Boot, Java, FastAPI"
 lang: fr
 url: "https://hamzaatig.github.io"
 baseurl: "/atig-hamza-portfolio-"
@@ -83,20 +86,79 @@ offers:
 # Experiences professionnelles
 # ------------------------------------------------------------------------------
 experiences:
+  - company: "ATIG IT Consulting"
+    role: "Architecte IA agentique & securite cloud"
+    role_en: "Agentic AI & cloud security architect"
+    period: "depuis janvier 2026"
+    period_en: "since January 2026"
+    icon: "rocket"
+    description: "Missions freelance d'architecture cloud, securite et IA agentique, plus deux produits IA agentique en propre."
+    description_en: "Freelance missions in cloud architecture, security and agentic AI, plus two in-house agentic AI products."
+    highlights:
+      - "Forfaits Security Checkup, Modernization Blueprint, DevSecOps Factory"
+      - "Pilotes IA agentique pour cas d'usage metier (assistant SOC, copilote dev, RAG metier)"
+      - "Approche archi-first : orchestration, controle humain (HITL), observabilite, guardrails"
+    highlights_en:
+      - "Security Checkup, Modernization Blueprint, DevSecOps Factory packages"
+      - "Agentic AI pilots for business use cases (SOC assistant, dev copilot, domain RAG)"
+      - "Architecture-first approach: orchestration, human control (HITL), observability, guardrails"
+
+  - company: "Aegis Defend"
+    role: "Conception & lead developer — SOAR agentique autonome"
+    role_en: "Designer & lead developer — autonomous agentic SOAR"
+    period: "depuis janvier 2026"
+    period_en: "since January 2026"
+    logo: "/assets/img/aegis-defend-logo.svg"
+    description: "SOAR agentique autonome pour PME : 18 agents IA en 5 escouades, sans SIEM requis."
+    description_en: "Autonomous agentic SOAR for SMBs: 18 AI agents across 5 squads, no SIEM required."
+    highlights:
+      - "Pipeline LangGraph + RAG pgvector (2364 docs MITRE ATT&CK / CISA KEV / playbooks)"
+      - "Cognitive Guardrails 5 couches, UEBA, HITL, mode dry-run par defaut"
+      - "Pile FastAPI + React + collecteur Go, multi-LLM (Ollama / OpenAI / Anthropic)"
+      - "Offre pilote SOC prete (4-6 semaines, v1.0.0-rc)"
+    highlights_en:
+      - "LangGraph pipeline + pgvector RAG (2,364 docs: MITRE ATT&CK / CISA KEV / playbooks)"
+      - "5-layer Cognitive Guardrails, UEBA, HITL, dry-run mode by default"
+      - "FastAPI + React stack + Go collector, multi-LLM (Ollama / OpenAI / Anthropic)"
+      - "SOC pilot offer available (4-6 weeks, v1.0.0-rc)"
+
+  - company: "AgentForge"
+    role: "Conception & lead developer — software factory multi-agents"
+    role_en: "Designer & lead developer — multi-agent software factory"
+    period: "depuis janvier 2026"
+    period_en: "since January 2026"
+    logo: "/assets/img/agentforge-logo.svg"
+    description: "Pipeline d'agents IA specialises qui transforme un besoin en code, tests et documentation sous controle humain."
+    description_en: "Pipeline of specialized AI agents that turns a need into code, tests and documentation under human oversight."
+    highlights:
+      - "5 phases : ideation -> architecture -> execution -> QA -> finalisation"
+      - "OutputContract declaratif par agent + anti-loop progress_score unifie"
+      - "HITL 9 decisions, quotas multi-niveaux, Git Scribe, live trace SSE"
+      - "Offre pilote early adopter pour premiers clients (places limitees)"
+    highlights_en:
+      - "5 phases: ideation -> architecture -> execution -> QA -> finalization"
+      - "Declarative OutputContract per agent + unified progress_score anti-loop"
+      - "HITL with 9 decisions, multi-level quotas, Git Scribe, SSE live trace"
+      - "Early adopter pilot offer for first clients (limited spots)"
+
   - company: "Amundi"
     role: "Technical Architect"
     role_en: "Technical Architect"
-    period: "depuis juin 2022"
-    period_en: "since June 2022"
+    period: "juin 2022 - mai 2026"
+    period_en: "June 2022 - May 2026"
     icon: "building-columns"  # Font Awesome icon
     description: "Architecture modulaire et modernisation du stack (Java 17, Spring Boot, conteneurs)"
     description_en: "Modular architecture and stack modernization (Java 17, Spring Boot, containers)"
     highlights:
-      - "Securisation des flux et gouvernance DevSecOps (OWASP, CVE)"
-      - "APIs et integrations critiques (OpenAPI, flux B2B)"
+      - "IAM Keycloak (OIDC/OAuth2) centralise + mTLS M2M sur les flux inter-services"
+      - "Migration progressive Strangler Pattern : Struts2/Java 8 -> Spring Boot 3/Java 17 (Kubernetes, ArgoCD)"
+      - "Event-driven Kafka : topics partitionnes, consumer groups, DLQ, backbone partenaires"
+      - "DevSecOps : OWASP SAST/DAST, gestion CVE, AES-256, TLS, bcrypt, pipelines GitLab CI/CD"
     highlights_en:
-      - "Secured flows and DevSecOps governance (OWASP, CVE)"
-      - "Critical APIs and B2B integrations (OpenAPI)"
+      - "Centralized Keycloak IAM (OIDC/OAuth2) + mTLS on all M2M inter-service flows"
+      - "Strangler-pattern migration: Struts2/Java 8 -> Spring Boot 3/Java 17 (Kubernetes, ArgoCD)"
+      - "Event-driven Kafka: partitioned topics, consumer groups, DLQ, partner integration backbone"
+      - "DevSecOps: OWASP SAST/DAST, CVE governance, AES-256, TLS, bcrypt, GitLab CI/CD pipelines"
 
   - company: "Credit Agricole Assurance"
     role: "Technical Architect"
@@ -104,12 +166,18 @@ experiences:
     period: "2022 - 2023"
     period_en: "2022 - 2023"
     icon: "lightbulb"
-    description: "Architecture de plateformes d'investissement a haut volume"
-    description_en: "High-volume investment platform architecture"
+    description: "Architecture de plateformes d'investissement a haut volume — pilotage IAM Keycloak full-scope"
+    description_en: "High-volume investment platform architecture — full-scope Keycloak IAM lead"
     highlights:
-      - "Migration vers cloud prive, SSO/IAM, modernisation middleware"
+      - "IAM Keycloak : modelisation des Realms (Master vs Business), clients OIDC + SAML 2.0 (legacy)"
+      - "Identity Brokering Active Directory/LDAP, Protocol Mappers (claims metier SOLIAM dans JWT)"
+      - "Methodologie par applications pilotes : 3 applis test (Legacy vs Microservices) -> 20+ applis"
+      - "Modernisation messaging ActiveMQ -> IBM MQ, remediation pentests, governance securite"
     highlights_en:
-      - "Private cloud migration, SSO/IAM, middleware modernization"
+      - "Keycloak IAM: Realm modeling (Master vs Business), OIDC + SAML 2.0 (legacy) clients"
+      - "Identity Brokering with Active Directory/LDAP, Protocol Mappers (business claims in JWT)"
+      - "Pilot-app methodology: 3 test apps (Legacy vs Microservices) scaled to 20+ apps"
+      - "Messaging modernization ActiveMQ -> IBM MQ, pentest remediation, security governance"
 
   - company: "Allianz Trade"
     role: "Technical Lead / Architect"
@@ -127,17 +195,23 @@ experiences:
       - "AWS transition with Terraform, API Gateway, Lambda, RDS"
 
   - company: "Orange Bank"
-    role: "Tech Lead"
-    role_en: "Tech Lead"
+    role: "Tech Lead / Architect"
+    role_en: "Tech Lead / Architect"
     period: "2019 - 2022"
     period_en: "2019 - 2022"
     icon: "building-columns"
-    description: "Architecture distribuee, integration et event-driven (Kafka)"
-    description_en: "Distributed architecture, integration and event-driven (Kafka)"
+    description: "Conception d'une API Security Gateway Zero Trust pour banque en ligne (Keycloak, mTLS, Kafka)"
+    description_en: "Design of a Zero Trust API Security Gateway for online banking (Keycloak, mTLS, Kafka)"
     highlights:
-      - "CI/CD, observabilite, securisation des echanges"
+      - "API Security Gateway Zero Trust from scratch : authentification multi-acteurs via Keycloak"
+      - "Keycloak SSO/MFA, OAuth2/OIDC, gestion/masquage des tokens, whitelisting dynamique, mTLS (CXF)"
+      - "Bridge LAN/WAN securise vers partenaires (Salesforce, Banque de France, Quicksign, Ingenico)"
+      - "Event-driven Kafka (topics partitionnes par domaine, DLQ), modernisation orchestration (Airflow)"
     highlights_en:
-      - "CI/CD, observability, secured exchanges"
+      - "Zero Trust API Security Gateway from scratch: multi-actor authentication via Keycloak"
+      - "Keycloak SSO/MFA, OAuth2/OIDC, token handling/masking, dynamic whitelisting, mTLS (CXF)"
+      - "Secured LAN/WAN bridge to partners (Salesforce, Banque de France, Quicksign, Ingenico)"
+      - "Event-driven Kafka (domain-partitioned topics, DLQ), orchestration modernization (Airflow)"
 
   - company: "INNSO (Foundever)"
     role: "Expert technique"
@@ -145,14 +219,18 @@ experiences:
     period: "09/2017 - 11/2019"
     period_en: "09/2017 - 11/2019"
     icon: "headset"
-    description: "Plateforme SaaS omnicanale pour centres d'appels"
-    description_en: "Omnichannel SaaS platform for call centers"
+    description: "Plateforme SaaS omnicanale pour centres d'appels — architecture IAM agnostique multi-tenant"
+    description_en: "Omnichannel SaaS platform for call centers — IAM-agnostic multi-tenant architecture"
     highlights:
-      - "Architecture microservices et mediation de flux complexes"
-      - "SSO SAML v2, tests d'intrusion et observabilite ELK/Grafana"
+      - "Architecture IAM agnostique : couche d'authentification compatible Keycloak / Okta / Azure AD / PingIdentity"
+      - "Federations d'identite OIDC + SAML v2, SSO hybride pour clients B2B (Orange, EDF)"
+      - "Zero Trust : API Gateway Zuul, validation systematique des tokens, remediation OWASP Top 10"
+      - "Microservices Spring Cloud (Eureka, Zuul), integration MuleSoft, observabilite ELK/Grafana"
     highlights_en:
-      - "Microservices architecture and complex flow mediation"
-      - "SAML v2 SSO, penetration testing, ELK/Grafana observability"
+      - "IAM-agnostic architecture: authentication layer compatible with Keycloak / Okta / Azure AD / PingIdentity"
+      - "OIDC + SAML v2 federations, hybrid SSO for B2B clients (Orange, EDF)"
+      - "Zero Trust: Zuul API Gateway, systematic token validation, OWASP Top 10 remediation"
+      - "Spring Cloud microservices (Eureka, Zuul), MuleSoft integration, ELK/Grafana observability"
 
 # ------------------------------------------------------------------------------
 # Competences
@@ -166,6 +244,9 @@ skills:
     - "Cloud & Infrastructure as Code"
     - "Observabilite & Resilience"
     - "Optimisation des performances"
+    - "IA agentique (LangGraph)"
+    - "RAG & vectorisation (pgvector)"
+    - "Guardrails LLM & HITL"
   expert_en:
     - "Solution architecture"
     - "Application security & IAM"
@@ -174,6 +255,9 @@ skills:
     - "Cloud & Infrastructure as Code"
     - "Observability & Resilience"
     - "Performance optimization"
+    - "Agentic AI (LangGraph)"
+    - "RAG & vector search (pgvector)"
+    - "LLM guardrails & HITL"
   standard:
     - "Java / Spring"
     - "Node.js"
@@ -185,6 +269,109 @@ skills:
     - "Git / GitLab / GitHub"
     - "SQL / NoSQL"
     - "Agile / SAFe"
+
+# ------------------------------------------------------------------------------
+# Solutions IA / AI solutions (produits internes)
+# ------------------------------------------------------------------------------
+ai_stack:
+  - "LangGraph"
+  - "RAG pgvector"
+  - "HITL"
+  - "Guardrails LLM"
+  - "Multi-LLM (OpenAI / Anthropic / Mistral / Ollama)"
+  - "OCSF"
+  - "FastAPI"
+  - "React"
+
+ai_solutions:
+  - id: "aegis-defend"
+    name: "Aegis Defend"
+    tagline: "SOAR agentique autonome pour PME — sans SIEM requis."
+    tagline_en: "Autonomous agentic SOAR for SMBs — no SIEM required."
+    status: "Pilote disponible"
+    status_en: "Pilot available"
+    description: "Plateforme de SOC autonome : un agent Go collecte les logs, 18 agents IA orchestres en LangGraph investiguent, qualifient et proposent des actions sous controle humain."
+    description_en: "Autonomous SOC platform: a Go agent ships logs while 18 LangGraph-orchestrated AI agents investigate, qualify, and propose actions under human oversight."
+    capabilities:
+      - "18 agents IA en 5 escouades (IAM, AppSec, ThreatIntel, DLP, Supervisor)"
+      - "RAG pgvector : 2364 documents indexes (MITRE ATT&CK, CISA KEV, playbooks SOC)"
+      - "5 couches de Cognitive Guardrails : injection prompt, output shield, budget tokens"
+      - "UEBA Phase 1 : baseline comportementale par utilisateur, detection impossible-travel"
+      - "Human-in-the-Loop sur chaque action sensible, mode dry-run par defaut"
+      - "Collecteur Go leger, 5 profils de logs (syslog, Wazuh, Windows, Sysmon, auth.log)"
+    capabilities_en:
+      - "18 AI agents across 5 squads (IAM, AppSec, ThreatIntel, DLP, Supervisor)"
+      - "pgvector RAG: 2,364 indexed documents (MITRE ATT&CK, CISA KEV, SOC playbooks)"
+      - "5-layer Cognitive Guardrails: prompt injection, output shield, token budget"
+      - "UEBA Phase 1: per-user behavioral baseline, impossible-travel detection"
+      - "Human-in-the-Loop for every sensitive action, dry-run mode by default"
+      - "Lightweight Go collector, 5 log profiles (syslog, Wazuh, Windows, Sysmon, auth.log)"
+
+  - id: "agentforge"
+    name: "AgentForge"
+    tagline: "Software factory multi-agents : de l'idee au livrable, sous controle humain."
+    tagline_en: "Multi-agent software factory: from idea to deliverable, with human oversight."
+    status: "Early adopter"
+    status_en: "Early adopter"
+    description: "Pipeline d'agents IA specialises qui transforme un besoin en code, tests et documentation : ideation, architecture, developpement, QA, finalisation."
+    description_en: "Pipeline of specialized AI agents that turns a need into code, tests, and documentation: ideation, architecture, development, QA, finalization."
+    capabilities:
+      - "Pipeline 5 phases : ideation -> architecture -> execution -> QA -> finalisation"
+      - "Registry d'agents dynamique (CRUD UI) — pas de roles ni d'outils figes"
+      - "OutputContract declaratif par agent : livrables traces et valides"
+      - "HITL avec 9 decisions humaines (approve / modify / retry / change_model...)"
+      - "Anti-loop unifie via progress_score : detection automatique de stagnation"
+      - "Quotas multi-niveaux (session / journalier / phase) + fallback de modele"
+    capabilities_en:
+      - "5-phase pipeline: ideation -> architecture -> execution -> QA -> finalization"
+      - "Dynamic agent registry (CRUD UI) — no hardcoded roles or tools"
+      - "Declarative OutputContract per agent: traced and validated deliverables"
+      - "HITL with 9 human decisions (approve / modify / retry / change_model...)"
+      - "Unified anti-loop via progress_score: automatic stagnation detection"
+      - "Multi-level quotas (session / daily / phase) + model fallback"
+
+ai_offers:
+  - id: "aegis-pilot"
+    name: "Pilote SOC Aegis Defend"
+    name_en: "Aegis Defend — SOC pilot"
+    duration: "4-6 semaines"
+    duration_en: "4-6 weeks"
+    for_whom: "PME / scale-up sans SIEM, ou SOC sous-dimensionne."
+    for_whom_en: "SMBs / scale-ups without a SIEM, or with an under-resourced SOC."
+    scope: "Deploiement sur 3 a 10 serveurs, raccordement des sources de logs, activation des 5 escouades, calibrage UEBA, configuration des playbooks."
+    scope_en: "Deployment on 3 to 10 servers, log source onboarding, activation of the 5 squads, UEBA calibration, playbook configuration."
+    deliverables:
+      - "Plateforme deployee (Docker, dry-run par defaut)"
+      - "Playbooks IAM / AppSec / ThreatIntel / DLP actives"
+      - "Dashboard SOC + rapport hebdomadaire de verdicts"
+      - "Transfert et documentation operationnelle"
+    deliverables_en:
+      - "Deployed platform (Docker, dry-run by default)"
+      - "IAM / AppSec / ThreatIntel / DLP playbooks enabled"
+      - "SOC dashboard + weekly verdict report"
+      - "Handover and operational documentation"
+
+  - id: "agentforge-pilot"
+    name: "Pilote AgentForge — early adopter"
+    name_en: "AgentForge — early adopter pilot"
+    duration: "4-6 semaines"
+    duration_en: "4-6 weeks"
+    for_whom: "Equipes produit / CTO souhaitant industrialiser un cas d'usage IA agentique interne."
+    for_whom_en: "Product teams / CTOs looking to industrialize an internal agentic AI use case."
+    scope: "Co-construction du cas d'usage, deploiement guide, configuration des agents (roles, OutputContracts, outils, quotas), execution d'un premier projet bout en bout avec HITL."
+    scope_en: "Co-design of the use case, guided deployment, agent configuration (roles, OutputContracts, tools, quotas), end-to-end execution of a first project with HITL."
+    deliverables:
+      - "Stack deployee et configuree sur votre environnement"
+      - "Agents calibres sur votre stack technique"
+      - "Runbook operationnel et bonnes pratiques HITL"
+      - "Formation equipe (atelier pratique)"
+    deliverables_en:
+      - "Stack deployed and configured in your environment"
+      - "Agents calibrated for your technical stack"
+      - "Operational runbook and HITL best practices"
+      - "Team training (hands-on workshop)"
+    note: "Places limitees. Tarif early adopter, co-design des evolutions selon retours pilote."
+    note_en: "Limited spots. Early adopter pricing, roadmap co-designed with pilot feedback."
 
 # ------------------------------------------------------------------------------
 # Formation
@@ -287,35 +474,41 @@ use_cases:
 # Projets / Clients
 # ------------------------------------------------------------------------------
 projects:
+  - client: "ATIG IT Consulting — produits IA"
+    sector: "Cybersecurite & IA agentique"
+    sector_en: "Cybersecurity & agentic AI"
+    mission: "Conception & developpement d'Aegis Defend (SOAR) et AgentForge (multi-agents)"
+    mission_en: "Design & build of Aegis Defend (SOAR) and AgentForge (multi-agent factory)"
+
   - client: "Amundi"
     sector: "Asset management"
     sector_en: "Asset management"
-    mission: "Architecture solution, modernisation, DevSecOps"
-    mission_en: "Solution architecture, modernization, DevSecOps"
+    mission: "Architecture, IAM Keycloak (OIDC/OAuth2), mTLS M2M, modernisation, DevSecOps"
+    mission_en: "Architecture, Keycloak IAM (OIDC/OAuth2), M2M mTLS, modernization, DevSecOps"
 
   - client: "Credit Agricole Assurance"
     sector: "Assurance / Finance"
     sector_en: "Insurance / Finance"
-    mission: "Architecture, IAM, migration cloud prive"
-    mission_en: "Architecture, IAM, private cloud migration"
+    mission: "IAM Keycloak full-scope : Realms, OIDC/SAML, Identity Brokering AD/LDAP, JWT mappers (3 -> 20+ applis)"
+    mission_en: "Full-scope Keycloak IAM: Realms, OIDC/SAML, AD/LDAP Identity Brokering, JWT mappers (3 -> 20+ apps)"
 
   - client: "Allianz Trade"
     sector: "B2B Finance"
     sector_en: "B2B Finance"
-    mission: "Modernisation plateforme, cloud AWS"
-    mission_en: "Platform modernization, AWS cloud"
+    mission: "Modernisation legacy Java 6/EJB -> Java 14/Spring Boot, cloud AWS (Terraform, DMS, Lambda)"
+    mission_en: "Legacy Java 6/EJB -> Java 14/Spring Boot modernization, AWS cloud (Terraform, DMS, Lambda)"
 
   - client: "Orange Bank"
     sector: "Banque en ligne"
     sector_en: "Online banking"
-    mission: "Integration, event-driven, securite"
-    mission_en: "Integration, event-driven, security"
+    mission: "API Security Gateway Zero Trust (Keycloak SSO/MFA, mTLS), event-driven Kafka, securite bancaire"
+    mission_en: "Zero Trust API Security Gateway (Keycloak SSO/MFA, mTLS), Kafka event-driven, banking security"
 
   - client: "INNSO (Foundever)"
     sector: "SaaS / CRM"
     sector_en: "SaaS / CRM"
-    mission: "Architecture microservices, observabilite"
-    mission_en: "Microservices architecture, observability"
+    mission: "Architecture IAM agnostique multi-tenant (OIDC/SAML, Keycloak/Okta/Azure AD), Zero Trust API Gateway"
+    mission_en: "IAM-agnostic multi-tenant architecture (OIDC/SAML, Keycloak/Okta/Azure AD), Zero Trust API Gateway"
 
 # ------------------------------------------------------------------------------
 # FAQ (pour schema.org)

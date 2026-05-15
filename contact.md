@@ -1,16 +1,25 @@
 ---
 layout: default
-title: "Contact"
+title: "Contact — Reservez un diagnostic gratuit (30 min) | Hamza Atig"
 permalink: /contact
-description: "Contactez Hamza Atig pour un diagnostic, une mission forfaitaire ou un accompagnement."
+description: "Reservez un creneau gratuit (30 min) avec Hamza Atig, architecte solutions, securite cloud et IA agentique freelance a Paris. Calendly, email ou LinkedIn. Reponse 24-48h."
+keywords: "contact architecte freelance Paris, reserver diagnostic gratuit, Calendly Hamza Atig, mission forfaitaire, IA agentique, securite cloud"
 alternate: /en/contact
-hero_title: "Contact architecte solutions & securite cloud freelance"
-hero_subtitle: "Paris - missions forfaitaires"
+hero_title: "Contact architecte solutions, securite cloud & IA agentique"
+hero_subtitle: "Paris - missions forfaitaires et pilotes IA"
 ---
 
 ## Contactez-moi
 
 Vous avez un projet de modernisation, un audit de securite a mener ou un besoin d'architecture technique ? Parlons-en.
+
+### Reserver un creneau
+
+{% if site.social.calendly %}
+<div style="margin: 1rem 0 1.5rem 0;">
+  <a href="{{ site.social.calendly }}" target="_blank" rel="noopener" style="display: inline-block; padding: 0.7rem 1.4rem; background: #3498db; color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600;">📅 Reserver un diagnostic gratuit (30 min)</a>
+</div>
+{% endif %}
 
 ### Prendre contact
 

@@ -1,12 +1,13 @@
 ---
 layout: default
-title: "Welcome"
+title: "Solutions, cloud security & agentic AI architect freelance | Hamza Atig"
 permalink: /en/
 lang: en
-description: "Solutions & cloud security architect. Fixed-price offers, modernization, security and DevSecOps."
+description: "Freelance architect in Paris specialized in modernization, cloud security, DevSecOps and agentic AI (LangGraph, RAG, HITL). Fixed-price packages and products: Aegis Defend (autonomous SOAR), AgentForge (multi-agent factory)."
+keywords: "solutions architect freelance Paris, cloud architect, cloud security, agentic AI, LangGraph, RAG pgvector, HITL, multi-agent, autonomous SOAR, AgentForge, Aegis Defend, DevSecOps, IAM, legacy modernization, Spring Boot"
 alternate: /
-hero_title: "Freelance solutions & cloud security architect in Paris"
-hero_subtitle: "Modernization, DevSecOps, and IAM for critical platforms"
+hero_title: "Freelance solutions, cloud security & agentic AI architect in Paris"
+hero_subtitle: "Modernization, DevSecOps, IAM and agentic AI for critical platforms"
 ---
 
 <div style="display: flex; align-items: center; gap: 2rem; margin-top: 2rem;">
@@ -14,10 +15,13 @@ hero_subtitle: "Modernization, DevSecOps, and IAM for critical platforms"
 
   <div>
     <h2>{{ site.author.name }}</h2>
-    <p><strong>{{ site.author.title_en }} with <span class="exp-years" data-exp-start-year="{{ site.author.experience_start_year }}" data-exp-start-month="{{ site.author.experience_start_month }}">14</span> years of experience</strong></p>
-    <p>I modernize, secure, and stabilize critical platforms through fixed-price, packaged offers.</p>
+    <p><strong>{{ site.author.title_en }} · <span class="exp-years" data-exp-start-year="{{ site.author.experience_start_year }}" data-exp-start-month="{{ site.author.experience_start_month }}">15</span> years on critical platforms (finance, insurance, SaaS).</strong></p>
+    <p>Creator of <a href="{{ '/en/ai-architecture#aegis-defend' | relative_url }}"><strong>Aegis Defend</strong></a> (autonomous SOAR) and <a href="{{ '/en/ai-architecture#agentforge' | relative_url }}"><strong>AgentForge</strong></a> (multi-agent software factory).</p>
+    <p>What I deliver: turning AI ideas into platforms that hold up in production — LangGraph orchestration, HITL, guardrails, observability. No prompt magic, fixed-price deliverables.</p>
   </div>
 </div>
+
+{% include svg-pillars.html %}
 
 ---
 
@@ -25,7 +29,7 @@ hero_subtitle: "Modernization, DevSecOps, and IAM for critical platforms"
 
 - Solutions architect for SMEs, scale-ups, and B2B organizations with security and integration challenges.
 - Specialist in legacy migrations, resilience, and DevSecOps industrialization.
-- I use AI to accelerate analysis, improve diagnostic reliability, and enhance delivery quality.
+- **Agentic AI** expertise applied to security and productivity — two products designed end to end: [see the AI architecture]({{ "/en/ai-architecture" | relative_url }}).
 
 ---
 
@@ -45,14 +49,16 @@ More details: [see the strategy]({{ "/en/strategy" | relative_url }}).
 
 ---
 
-## Key experience
+## Today
 
-{% for exp in site.experiences %}
-### <i class="fas fa-{{ exp.icon }}"></i> {{ exp.company }} — {{ exp.role_en }} *({{ exp.period_en }})*
+{% for exp in site.experiences limit:3 %}
+### {% if exp.logo %}<img src="{{ exp.logo | relative_url }}" alt="{{ exp.company }}" width="28" height="28" style="vertical-align: middle; margin-right: 0.4rem; border-radius: 4px;"/>{% else %}<i class="fas fa-{{ exp.icon }}"></i>{% endif %} {{ exp.company }} — {{ exp.role_en }} *({{ exp.period_en }})*
 - {{ exp.description_en }}
 {% for h in exp.highlights_en %}- {{ h }}
 {% endfor %}
 {% endfor %}
+
+<p style="margin-top: 1.5rem;"><a href="{{ '/en/projects' | relative_url }}"><strong>See all my experiences and clients →</strong></a></p>
 
 ---
 

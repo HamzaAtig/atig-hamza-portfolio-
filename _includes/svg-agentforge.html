@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" role="img" aria-label="AgentForge multi-agent pipeline" style="max-width:100%;height:auto;display:block;margin:1.5rem auto;color:var(--text);">
+  <defs>
+    <marker id="arr-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3498db"/>
+    </marker>
+    <style>
+      .f-box{fill:none;stroke:currentColor;stroke-width:1.5;opacity:0.85;}
+      .f-card{fill:rgba(52,152,219,0.05);stroke:#3498db;stroke-width:1.2;}
+      .f-phase{fill:rgba(52,152,219,0.08);stroke:#3498db;stroke-width:1.5;}
+      .f-io{fill:none;stroke:currentColor;stroke-width:1.5;opacity:0.7;stroke-dasharray:4 3;}
+      .f-title{font:600 13px Roboto,sans-serif;fill:currentColor;}
+      .f-phase-name{font:700 14px Roboto,sans-serif;fill:#3498db;letter-spacing:0.03em;}
+      .f-section{font:600 11px Roboto,sans-serif;fill:#3498db;letter-spacing:0.08em;text-transform:uppercase;}
+      .f-b{font:400 11px Roboto,sans-serif;fill:currentColor;opacity:0.82;}
+      .f-mini{font:600 12px Roboto,sans-serif;fill:currentColor;}
+      .f-flow{stroke:#3498db;stroke-width:2;fill:none;}
+      .f-accent{fill:#3498db;font:600 12px Roboto,sans-serif;}
+    </style>
+  </defs>
+
+  <text x="120" y="28" class="f-section" text-anchor="middle">Input</text>
+  <text x="600" y="28" class="f-section" text-anchor="middle">Pipeline · LangGraph state machine</text>
+  <text x="1080" y="28" class="f-section" text-anchor="middle">Output</text>
+
+  <!-- INPUT -->
+  <rect x="50" y="40" width="140" height="180" rx="10" class="f-io"/>
+  <text x="120" y="68" class="f-mini" text-anchor="middle">User brief</text>
+  <text x="120" y="90" class="f-b" text-anchor="middle">"Build me a…"</text>
+  <line x1="65" y1="105" x2="175" y2="105" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+  <text x="62" y="128" class="f-b">• natural language</text>
+  <text x="62" y="150" class="f-b">• .agentforge/ ctx</text>
+  <text x="62" y="172" class="f-b">• resume support</text>
+  <text x="62" y="194" class="f-b">• PLAN · HANDOFF</text>
+  <text x="62" y="214" class="f-b">  PROGRESS.json</text>
+
+  <path d="M 192 130 L 208 130" class="f-flow" marker-end="url(#arr-f)"/>
+
+  <!-- Phase 1: Ideation -->
+  <rect x="210" y="40" width="140" height="180" rx="10" class="f-phase"/>
+  <text x="280" y="62" class="f-phase-name" text-anchor="middle">Ideation</text>
+  <text x="280" y="80" class="f-b" text-anchor="middle">PO · Researcher</text>
+  <line x1="225" y1="92" x2="335" y2="92" stroke="#3498db" stroke-width="0.5" opacity="0.4"/>
+  <text x="222" y="115" class="f-b">• user stories</text>
+  <text x="222" y="137" class="f-b">• PRD draft</text>
+  <text x="222" y="159" class="f-b">• market scan</text>
+  <text x="222" y="181" class="f-b">• tickets emitted</text>
+  <text x="222" y="203" class="f-b">• DuckDuckGo</text>
+
+  <path d="M 352 130 L 368 130" class="f-flow" marker-end="url(#arr-f)"/>
+
+  <!-- Phase 2: Architecture -->
+  <rect x="370" y="40" width="140" height="180" rx="10" class="f-phase"/>
+  <text x="440" y="62" class="f-phase-name" text-anchor="middle">Architecture</text>
+  <text x="440" y="80" class="f-b" text-anchor="middle">Architect</text>
+  <line x1="385" y1="92" x2="495" y2="92" stroke="#3498db" stroke-width="0.5" opacity="0.4"/>
+  <text x="382" y="115" class="f-b">• system design</text>
+  <text x="382" y="137" class="f-b">• tech stack</text>
+  <text x="382" y="159" class="f-b">• schemas</text>
+  <text x="382" y="181" class="f-b">• ADRs</text>
+  <text x="382" y="203" class="f-b">• dependency map</text>
+
+  <path d="M 512 130 L 528 130" class="f-flow" marker-end="url(#arr-f)"/>
+
+  <!-- Phase 3: Execution -->
+  <rect x="530" y="40" width="140" height="180" rx="10" class="f-phase"/>
+  <text x="600" y="62" class="f-phase-name" text-anchor="middle">Execution</text>
+  <text x="600" y="80" class="f-b" text-anchor="middle">Dev · Designer · BV</text>
+  <line x1="545" y1="92" x2="655" y2="92" stroke="#3498db" stroke-width="0.5" opacity="0.4"/>
+  <text x="542" y="115" class="f-b">• code (multi-file)</text>
+  <text x="542" y="137" class="f-b">• frontend</text>
+  <text x="542" y="159" class="f-b">• pytest · ruff</text>
+  <text x="542" y="181" class="f-b">• py_compile</text>
+  <text x="542" y="203" class="f-b">• build checks</text>
+
+  <path d="M 672 130 L 688 130" class="f-flow" marker-end="url(#arr-f)"/>
+
+  <!-- Phase 4: QA -->
+  <rect x="690" y="40" width="140" height="180" rx="10" class="f-phase"/>
+  <text x="760" y="62" class="f-phase-name" text-anchor="middle">QA</text>
+  <text x="760" y="80" class="f-b" text-anchor="middle">QA Engineer</text>
+  <line x1="705" y1="92" x2="815" y2="92" stroke="#3498db" stroke-width="0.5" opacity="0.4"/>
+  <text x="702" y="115" class="f-b">• test execution</text>
+  <text x="702" y="137" class="f-b">• regressions</text>
+  <text x="702" y="159" class="f-b">• coverage gate</text>
+  <text x="702" y="181" class="f-b">• retry → modify</text>
+  <text x="702" y="203" class="f-b">• golden outputs</text>
+
+  <path d="M 832 130 L 848 130" class="f-flow" marker-end="url(#arr-f)"/>
+
+  <!-- Phase 5: Finalization -->
+  <rect x="850" y="40" width="140" height="180" rx="10" class="f-phase"/>
+  <text x="920" y="62" class="f-phase-name" text-anchor="middle">Finalization</text>
+  <text x="920" y="80" class="f-b" text-anchor="middle">Sales &amp; Marketing</text>
+  <line x1="865" y1="92" x2="975" y2="92" stroke="#3498db" stroke-width="0.5" opacity="0.4"/>
+  <text x="862" y="115" class="f-b">• documentation</text>
+  <text x="862" y="137" class="f-b">• marketing pitch</text>
+  <text x="862" y="159" class="f-b">• launch plan</text>
+  <text x="862" y="181" class="f-b">• README</text>
+  <text x="862" y="203" class="f-b">• release notes</text>
+
+  <path d="M 992 130 L 1008 130" class="f-flow" marker-end="url(#arr-f)"/>
+
+  <!-- OUTPUT -->
+  <rect x="1010" y="40" width="140" height="180" rx="10" class="f-io"/>
+  <text x="1080" y="68" class="f-mini" text-anchor="middle">Deliverables</text>
+  <line x1="1025" y1="80" x2="1135" y2="80" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+  <text x="1022" y="105" class="f-b">• source code</text>
+  <text x="1022" y="127" class="f-b">• tests + coverage</text>
+  <text x="1022" y="149" class="f-b">• docs + ADRs</text>
+  <text x="1022" y="171" class="f-b">• Git commits</text>
+  <text x="1022" y="189" class="f-b">  (Git Scribe)</text>
+  <text x="1022" y="211" class="f-b">• marketing brief</text>
+
+  <!-- HITL gates -->
+  <text x="50" y="252" class="f-section">HITL gates</text>
+  <line x1="280" y1="220" x2="280" y2="262" stroke="#3498db" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>
+  <g transform="translate(280, 274)"><path d="M 0,-12 L 12,0 L 0,12 L -12,0 z" class="f-card"/></g>
+  <text x="280" y="305" class="f-b" text-anchor="middle">approve / modify</text>
+
+  <line x1="440" y1="220" x2="440" y2="262" stroke="#3498db" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>
+  <g transform="translate(440, 274)"><path d="M 0,-12 L 12,0 L 0,12 L -12,0 z" class="f-card"/></g>
+  <text x="440" y="305" class="f-b" text-anchor="middle">approve / modify</text>
+
+  <line x1="600" y1="220" x2="600" y2="262" stroke="#3498db" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>
+  <g transform="translate(600, 274)"><path d="M 0,-12 L 12,0 L 0,12 L -12,0 z" class="f-card"/></g>
+  <text x="600" y="305" class="f-b" text-anchor="middle">approve / retry</text>
+
+  <line x1="760" y1="220" x2="760" y2="262" stroke="#3498db" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>
+  <g transform="translate(760, 274)"><path d="M 0,-12 L 12,0 L 0,12 L -12,0 z" class="f-card"/></g>
+  <text x="760" y="305" class="f-b" text-anchor="middle">approve / retry</text>
+
+  <line x1="920" y1="220" x2="920" y2="262" stroke="#3498db" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>
+  <g transform="translate(920, 274)"><path d="M 0,-12 L 12,0 L 0,12 L -12,0 z" class="f-card"/></g>
+  <text x="920" y="305" class="f-b" text-anchor="middle">approve / skip</text>
+
+  <text x="1080" y="290" class="f-accent" text-anchor="middle">9 human</text>
+  <text x="1080" y="305" class="f-accent" text-anchor="middle">decisions</text>
+
+  <!-- OutputContract band -->
+  <rect x="210" y="330" width="780" height="80" rx="8" class="f-card"/>
+  <text x="600" y="354" class="f-title" text-anchor="middle">OutputContract — declarative, per agent</text>
+  <text x="240" y="380" class="f-b">• produces_files</text>
+  <text x="370" y="380" class="f-b">• file_globs</text>
+  <text x="490" y="380" class="f-b">• deliverable spec</text>
+  <text x="640" y="380" class="f-b">• emits_tickets</text>
+  <text x="780" y="380" class="f-b">• min_tickets_to_emit</text>
+  <text x="600" y="399" class="f-b" text-anchor="middle">enforced uniformly: system prompt builder · response parser · livrable filter · supervisor gate · progress_score</text>
+
+  <!-- Runtime controls -->
+  <text x="50" y="442" class="f-section">Runtime controls</text>
+  <rect x="50" y="458" width="200" height="92" rx="8" class="f-card"/>
+  <text x="150" y="480" class="f-mini" text-anchor="middle">Quotas</text>
+  <text x="150" y="500" class="f-b" text-anchor="middle">session · daily · per-phase</text>
+  <text x="150" y="518" class="f-b" text-anchor="middle">model fallback cascade</text>
+  <text x="150" y="536" class="f-b" text-anchor="middle">live recharge from UI</text>
+
+  <rect x="270" y="458" width="200" height="92" rx="8" class="f-card"/>
+  <text x="370" y="480" class="f-mini" text-anchor="middle">Anti-loop</text>
+  <text x="370" y="500" class="f-b" text-anchor="middle">progress_score / agent</text>
+  <text x="370" y="518" class="f-b" text-anchor="middle">stagnation detection</text>
+  <text x="370" y="536" class="f-b" text-anchor="middle">replaces 3 legacy mech.</text>
+
+  <rect x="490" y="458" width="200" height="92" rx="8" class="f-card"/>
+  <text x="590" y="480" class="f-mini" text-anchor="middle">Git Scribe</text>
+  <text x="590" y="500" class="f-b" text-anchor="middle">async commit queue</text>
+  <text x="590" y="518" class="f-b" text-anchor="middle">file-ownership locks</text>
+  <text x="590" y="536" class="f-b" text-anchor="middle">conflict prevention</text>
+
+  <rect x="710" y="458" width="200" height="92" rx="8" class="f-card"/>
+  <text x="810" y="480" class="f-mini" text-anchor="middle">Live trace</text>
+  <text x="810" y="500" class="f-b" text-anchor="middle">SSE → React UI</text>
+  <text x="810" y="518" class="f-b" text-anchor="middle">3 s auto-refresh</text>
+  <text x="810" y="536" class="f-b" text-anchor="middle">cost + token tracking</text>
+
+  <rect x="930" y="458" width="220" height="92" rx="8" class="f-card"/>
+  <text x="1040" y="480" class="f-mini" text-anchor="middle">Multi-LLM</text>
+  <text x="1040" y="500" class="f-b" text-anchor="middle">OpenAI · Anthropic · Mistral</text>
+  <text x="1040" y="518" class="f-b" text-anchor="middle">DeepSeek · Ollama · LiteLLM</text>
+  <text x="1040" y="536" class="f-b" text-anchor="middle">configurable per agent</text>
+</svg>

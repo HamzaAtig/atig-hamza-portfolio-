@@ -1,10 +1,11 @@
 ---
 layout: default
-title: "Bienvenue sur mon portfolio"
-description: "Architecte solutions & securite cloud. Offres forfaitaires, modernisation, securite et DevSecOps."
+title: "Architecte solutions, securite cloud & IA agentique freelance | Hamza Atig"
+description: "Architecte freelance a Paris specialise en modernisation, securite cloud, DevSecOps et IA agentique (LangGraph, RAG, HITL). Offres forfaitaires et produits : Aegis Defend (SOAR autonome), AgentForge (multi-agents)."
+keywords: "architecte solutions freelance Paris, architecte cloud, securite cloud, IA agentique, LangGraph, RAG pgvector, HITL, multi-agents, SOAR, AgentForge, Aegis Defend, DevSecOps, IAM, modernisation legacy, Spring Boot"
 alternate: /en/
-hero_title: "Architecte solutions & securite cloud freelance a Paris"
-hero_subtitle: "Modernisation, DevSecOps et IAM pour plateformes critiques"
+hero_title: "Architecte solutions, securite cloud & IA agentique freelance a Paris"
+hero_subtitle: "Modernisation, DevSecOps, IAM et IA agentique pour plateformes critiques"
 ---
 
 <div style="display: flex; align-items: center; gap: 2rem; margin-top: 2rem;">
@@ -12,10 +13,13 @@ hero_subtitle: "Modernisation, DevSecOps et IAM pour plateformes critiques"
 
   <div>
     <h2>{{ site.author.name }}</h2>
-    <p><strong>{{ site.author.title }} avec <span class="exp-years" data-exp-start-year="{{ site.author.experience_start_year }}" data-exp-start-month="{{ site.author.experience_start_month }}">14</span> ans d'experience</strong></p>
-    <p>Je modernise, securise et fiabilise les plateformes critiques avec des offres packagees au forfait.</p>
+    <p><strong>{{ site.author.title }} · <span class="exp-years" data-exp-start-year="{{ site.author.experience_start_year }}" data-exp-start-month="{{ site.author.experience_start_month }}">15</span> ans sur des plateformes critiques (finance, assurance, SaaS).</strong></p>
+    <p>Concepteur d'<a href="{{ '/archi-ia#aegis-defend' | relative_url }}"><strong>Aegis Defend</strong></a> (SOAR autonome) et d'<a href="{{ '/archi-ia#agentforge' | relative_url }}"><strong>AgentForge</strong></a> (software factory multi-agents).</p>
+    <p>Ma valeur : transformer une idee d'IA en plateforme qui tient en production — orchestration LangGraph, HITL, guardrails, observabilite. Pas de prompt magic, des livrables au forfait.</p>
   </div>
 </div>
+
+{% include svg-pillars.html %}
 
 ---
 
@@ -23,7 +27,7 @@ hero_subtitle: "Modernisation, DevSecOps et IAM pour plateformes critiques"
 
 - Architecte solutions pour PME, scale-ups et acteurs B2B avec enjeux de securite et d'integration.
 - Specialiste des migrations legacy, de la resilience et de l'industrialisation DevSecOps.
-- J'utilise l'IA pour accelerer l'analyse, fiabiliser les diagnostics et ameliorer la qualite des livrables.
+- Expertise **IA agentique** appliquee a la securite et a la productivite — deux produits conçus de bout en bout: [voir l'archi IA]({{ "/archi-ia" | relative_url }}).
 
 ---
 
@@ -43,14 +47,16 @@ Pour plus de details: [voir la strategie]({{ "/strategie" | relative_url }}).
 
 ---
 
-## Experiences cles
+## Aujourd'hui
 
-{% for exp in site.experiences %}
-### <i class="fas fa-{{ exp.icon }}"></i> {{ exp.company }} — {{ exp.role }} *({{ exp.period }})*
+{% for exp in site.experiences limit:3 %}
+### {% if exp.logo %}<img src="{{ exp.logo | relative_url }}" alt="{{ exp.company }}" width="28" height="28" style="vertical-align: middle; margin-right: 0.4rem; border-radius: 4px;"/>{% else %}<i class="fas fa-{{ exp.icon }}"></i>{% endif %} {{ exp.company }} — {{ exp.role }} *({{ exp.period }})*
 - {{ exp.description }}
 {% for h in exp.highlights %}- {{ h }}
 {% endfor %}
 {% endfor %}
+
+<p style="margin-top: 1.5rem;"><a href="{{ '/projects' | relative_url }}"><strong>Voir toutes mes experiences et clients →</strong></a></p>
 
 ---
 

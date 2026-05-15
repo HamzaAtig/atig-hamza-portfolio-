@@ -1,17 +1,26 @@
 ---
 layout: default
-title: "Contact"
+title: "Contact — Book a free diagnostic call (30 min) | Hamza Atig"
 permalink: /en/contact
 lang: en
-description: "Get in touch with Hamza Atig for a diagnostic, fixed-price mission, or sprint support."
+description: "Book a free 30-min call with Hamza Atig, freelance solutions, cloud security and agentic AI architect in Paris. Calendly, email or LinkedIn. Response within 24-48h."
+keywords: "contact freelance architect Paris, book free diagnostic call, Calendly Hamza Atig, fixed-price mission, agentic AI, cloud security"
 alternate: /contact
-hero_title: "Contact freelance solutions & cloud security architect"
-hero_subtitle: "Paris - fixed-price missions"
+hero_title: "Contact solutions, cloud security & agentic AI architect"
+hero_subtitle: "Paris - fixed-price missions and AI pilots"
 ---
 
 ## Contact me
 
 Have a modernization project, a security audit to conduct, or a technical architecture need? Let's talk.
+
+### Book a slot
+
+{% if site.social.calendly %}
+<div style="margin: 1rem 0 1.5rem 0;">
+  <a href="{{ site.social.calendly }}" target="_blank" rel="noopener" style="display: inline-block; padding: 0.7rem 1.4rem; background: #3498db; color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600;">📅 Book a free diagnostic call (30 min)</a>
+</div>
+{% endif %}
 
 ### Get in touch
 
