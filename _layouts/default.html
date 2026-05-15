@@ -236,7 +236,13 @@
   <body>
     <header>
       <div class="nav-wrapper">
-        <div class="nav-left"><strong>{{ site.author.name }}</strong></div>
+        <div class="nav-left">
+          {% if page.lang == "en" %}
+          <a href="{{ '/en/#about-pitch' | relative_url }}" class="nav-home-link"><strong>{{ site.author.name }}</strong></a>
+          {% else %}
+          <a href="{{ '/#about-pitch' | relative_url }}" class="nav-home-link"><strong>{{ site.author.name }}</strong></a>
+          {% endif %}
+        </div>
         <div class="burger" onclick="toggleMenu()">☰</div>
         <div class="nav-right" id="nav-menu">
           {% if page.lang == "en" %}

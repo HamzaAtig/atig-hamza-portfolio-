@@ -970,3 +970,30 @@ footer strong {
     font-size: 0.95rem;
   }
 }
+
+/* Clickable name in nav — links back to home pitch */
+.nav-left .nav-home-link {
+  text-decoration: none;
+  color: var(--text);
+  transition: color var(--transition-fast);
+}
+.nav-left .nav-home-link:hover {
+  color: var(--accent);
+}
+
+/* Pitch anchor target — offset for fixed header + subtle highlight when targeted */
+#about-pitch {
+  scroll-margin-top: 100px;
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
+  margin-left: calc(-1 * var(--space-sm));
+  transition: background-color 0.6s ease;
+}
+#about-pitch:target {
+  animation: pitch-highlight 1.6s ease;
+}
+@keyframes pitch-highlight {
+  0% { background: var(--accent-light); }
+  40% { background: var(--accent-light); }
+  100% { background: transparent; }
+}

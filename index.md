@@ -8,7 +8,7 @@ hero_title: "Architecte IA agentique & sécurité cloud — freelance à Paris"
 hero_subtitle: "Des plateformes IA qui tiennent en production. Pas de prompt magic."
 ---
 
-<div style="display: flex; align-items: center; gap: 2rem; margin-top: 2rem;">
+<div id="about-pitch" style="display: flex; align-items: center; gap: 2rem; margin-top: 2rem;">
   <img src="{{ site.author.photo | relative_url }}" alt="{{ site.author.name }}" width="140" height="140" loading="lazy" decoding="async" style="width: 140px; height: 140px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
 
   <div>
