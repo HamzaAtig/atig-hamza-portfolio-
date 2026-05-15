@@ -19,6 +19,11 @@ hero_subtitle: "Modernisation, DevSecOps, IAM et IA agentique pour plateformes c
   </div>
 </div>
 
+<div class="trusted-by">
+  <p class="trusted-by-label">Ils m'ont fait confiance</p>
+  <p class="trusted-by-list">Amundi&nbsp;·&nbsp;Crédit Agricole Assurance&nbsp;·&nbsp;Allianz Trade&nbsp;·&nbsp;Orange Bank&nbsp;·&nbsp;INNSO (Foundever)</p>
+</div>
+
 {% include svg-pillars.html %}
 
 ---
