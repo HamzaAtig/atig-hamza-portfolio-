@@ -3,33 +3,33 @@ layout: default
 title: "Architecture IA agentique : Aegis Defend & AgentForge | Hamza Atig"
 permalink: /archi-ia
 lang: fr
-description: "Expertise IA agentique applique a la securite et a la productivite. Architecture LangGraph, RAG pgvector, HITL, guardrails LLM, multi-LLM. Decouvrez Aegis Defend (SOAR autonome SOC) et AgentForge (software factory multi-agents)."
+description: "Expertise IA agentique appliquée à la sécurité et à la productivité. Architecture LangGraph, RAG pgvector, HITL, guardrails LLM, multi-LLM. Découvrez Aegis Defend (SOAR autonome SOC) et AgentForge (software factory multi-agents)."
 keywords: "IA agentique, agentic AI, LangGraph, RAG pgvector, HITL, guardrails LLM, multi-agents, orchestration agents IA, SOAR autonome, Aegis Defend, AgentForge, MITRE ATT&CK, multi-LLM, OpenAI, Anthropic, Ollama, architecture IA Paris, freelance IA"
 alternate: /en/ai-architecture
-hero_title: "Architecture IA agentique pour la securite & la productivite"
-hero_subtitle: "Systemes orchestres, observables et securises — LangGraph, RAG, HITL, guardrails"
+hero_title: "Architecture IA agentique pour la sécurité & la productivité"
+hero_subtitle: "Systèmes orchestrés, observables et sécurisés — LangGraph, RAG, HITL, guardrails"
 ---
 
 ## Pourquoi une expertise IA agentique distincte
 
-L'IA generative est devenue accessible. Mais passer d'un prototype de prompt a une plateforme exploitable en production reste un sujet d'architecture: orchestration, etat, observabilite, securite, controle humain.
+L'IA générative est devenue accessible. Mais passer d'un prototype de prompt à une plateforme exploitable en production reste un sujet d'architecture : orchestration, état, observabilité, sécurité, contrôle humain.
 
-Avec **<span class="exp-years" data-exp-start-year="{{ site.author.experience_start_year }}" data-exp-start-month="{{ site.author.experience_start_month }}">15</span> ans d'experience** sur des plateformes critiques (finance, assurance, SaaS) et deux produits IA conçus de bout en bout, j'apporte une lecture archi-first des systemes agentiques: **pas de prompt magic, des pipelines deterministes la ou il faut, du non-deterministe encadre la ou il apporte de la valeur.**
+Avec **<span class="exp-years" data-exp-start-year="{{ site.author.experience_start_year }}" data-exp-start-month="{{ site.author.experience_start_month }}">15</span> ans d'expérience** sur des plateformes critiques (finance, assurance, SaaS) et deux produits IA conçus de bout en bout, j'apporte une lecture archi-first des systèmes agentiques : **pas de prompt magic, des pipelines déterministes là où il faut, du non-déterministe encadré là où il apporte de la valeur.**
 
 ---
 
 ## Principes d'architecture
 
-- **Orchestration explicite** — graphes d'agents (LangGraph), etats persistants, routes conditionnelles tracables.
-- **Human-in-the-Loop** — l'humain reste decisionnaire sur les actions sensibles, avec reprise d'etat fiable.
-- **Guardrails multi-couches** — detection d'injection prompt, validation de sortie, budget de tokens, defense en profondeur.
-- **RAG ancre dans le metier** — corpus vectorises (pgvector) pour eviter l'hallucination et tracer les sources.
-- **Multi-LLM par defaut** — pas de dependance a un seul fournisseur (OpenAI, Anthropic, Mistral, Ollama).
-- **Observabilite native** — logs structures, metriques Prometheus, audit trail des decisions.
+- **Orchestration explicite** — graphes d'agents (LangGraph), états persistants, routes conditionnelles traçables.
+- **Human-in-the-Loop** — l'humain reste décisionnaire sur les actions sensibles, avec reprise d'état fiable.
+- **Guardrails multi-couches** — détection d'injection prompt, validation de sortie, budget de tokens, défense en profondeur.
+- **RAG ancré dans le métier** — corpus vectorisés (pgvector) pour éviter l'hallucination et tracer les sources.
+- **Multi-LLM par défaut** — pas de dépendance à un seul fournisseur (OpenAI, Anthropic, Mistral, Ollama).
+- **Observabilité native** — logs structurés, métriques Prometheus, audit trail des décisions.
 
 ---
 
-## Stack de reference
+## Stack de référence
 
 <div class="skills expert">
 {% for tech in site.ai_stack %}  <span>{{ tech }}</span>
@@ -42,7 +42,7 @@ Avec **<span class="exp-years" data-exp-start-year="{{ site.author.experience_st
 {% for solution in site.ai_solutions %}
 ### {{ solution.name }} — {{ solution.tagline }}
 
-<p><strong>Statut:</strong> {{ solution.status }}</p>
+<p><strong>Statut :</strong> {{ solution.status }}</p>
 
 {{ solution.description }}
 
@@ -52,7 +52,7 @@ Avec **<span class="exp-years" data-exp-start-year="{{ site.author.experience_st
 {% include svg-agentforge.html %}
 {% endif %}
 
-**Capacites cles**
+**Capacités clés**
 {% for cap in solution.capabilities %}
 - {{ cap }}
 {% endfor %}
@@ -66,10 +66,10 @@ Avec **<span class="exp-years" data-exp-start-year="{{ site.author.experience_st
 {% for offer in site.ai_offers %}
   <div class="offer-card">
     <h3>{{ offer.name }} ({{ offer.duration }})</h3>
-    <p><strong>Pour qui:</strong> {{ offer.for_whom }}</p>
-    <p><strong>Perimetre:</strong> {{ offer.scope }}</p>
+    <p><strong>Pour qui :</strong> {{ offer.for_whom }}</p>
+    <p><strong>Périmètre :</strong> {{ offer.scope }}</p>
     <div class="offer-meta">
-      <strong>Livrables:</strong>
+      <strong>Livrables :</strong>
       <ul style="margin: 0.5rem 0 0 0; padding-left: 1.2rem;">
         {% for d in offer.deliverables %}<li>{{ d }}</li>{% endfor %}
       </ul>
@@ -81,8 +81,8 @@ Avec **<span class="exp-years" data-exp-start-year="{{ site.author.experience_st
 
 ---
 
-## Et au-dela des produits
+## Et au-delà des produits
 
-L'expertise IA agentique se transpose sur vos propres cas d'usage internes: assistant SOC, copilote dev, generation de documentation, automatisation conditionnelle de tickets, RAG metier. Le socle technique reste le meme — orchestration, controle humain, observabilite, securite.
+L'expertise IA agentique se transpose sur vos propres cas d'usage internes : assistant SOC, copilote dev, génération de documentation, automatisation conditionnelle de tickets, RAG métier. Le socle technique reste le même — orchestration, contrôle humain, observabilité, sécurité.
 
 [Discutons d'un cas d'usage]({{ "/contact" | relative_url }}).

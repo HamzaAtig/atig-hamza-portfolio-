@@ -3,23 +3,23 @@ layout: default
 title: "Cas d'usage"
 permalink: /cas-usage
 lang: fr
-description: "Cas d'usage de modernisation cloud, securite IAM, DevSecOps et integration pour plateformes critiques."
+description: "Cas d'usage de modernisation cloud, sécurité IAM, DevSecOps et intégration pour plateformes critiques."
 alternate: /en/use-cases
-hero_title: "Cas d'usage: modernisation, securite et integration"
-hero_subtitle: "Exemples concrets orientes resultats (finance, assurance, SaaS)"
+hero_title: "Cas d'usage : modernisation, sécurité et intégration"
+hero_subtitle: "Exemples concrets orientés résultats (finance, assurance, SaaS)"
 ---
 
 {% for usecase in site.use_cases %}
 ## {{ usecase.title }}
 
-**Contexte**: {{ usecase.context }}
+**Contexte** : {{ usecase.context }}
 
-**Approche**:
+**Approche** :
 {% for item in usecase.approach %}
 - {{ item }}
 {% endfor %}
 
-**Resultats**:
+**Résultats** :
 {% for item in usecase.results %}
 - {{ item }}
 {% endfor %}
@@ -28,6 +28,6 @@ hero_subtitle: "Exemples concrets orientes resultats (finance, assurance, SaaS)"
 
 {% endfor %}
 
-## Besoin d'un cas similaire?
+## Besoin d'un cas similaire ?
 
-Parlons-en: [me contacter]({{ "/contact" | relative_url }}).
+Parlons-en : [me contacter]({{ "/contact" | relative_url }}).

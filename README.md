@@ -15,11 +15,11 @@ Un template de portfolio professionnel moderne, bilingue (FR/EN), optimise pour 
 - **Performance** : CSS externe, lazy loading images
 - **Accessible** : Focus states, reduced motion support
 - **Animations** : Fade-in, hover effects, transitions fluides
-- **Configurable** : Toutes les donnees dans `_config.yml`
+- **Configurable** : Toutes les données dans `_config.yml`
 
 ## Installation rapide
 
-### Prerequis
+### Prérequis
 
 - Ruby >= 2.7
 - Bundler (`gem install bundler`)

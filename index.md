@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Architecte solutions, securite cloud & IA agentique freelance | Hamza Atig"
-description: "Architecte freelance a Paris specialise en modernisation, securite cloud, DevSecOps et IA agentique (LangGraph, RAG, HITL). Offres forfaitaires et produits : Aegis Defend (SOAR autonome), AgentForge (multi-agents)."
-keywords: "architecte solutions freelance Paris, architecte cloud, securite cloud, IA agentique, LangGraph, RAG pgvector, HITL, multi-agents, SOAR, AgentForge, Aegis Defend, DevSecOps, IAM, modernisation legacy, Spring Boot"
+title: "Architecte solutions, sécurité cloud & IA agentique freelance | Hamza Atig"
+description: "Architecte freelance à Paris spécialisé en modernisation, sécurité cloud, DevSecOps et IA agentique (LangGraph, RAG, HITL). Offres forfaitaires et produits : Aegis Defend (SOAR autonome), AgentForge (multi-agents)."
+keywords: "architecte solutions freelance Paris, architecte cloud, sécurité cloud, IA agentique, LangGraph, RAG pgvector, HITL, multi-agents, SOAR, AgentForge, Aegis Defend, DevSecOps, IAM, modernisation legacy, Spring Boot"
 alternate: /en/
-hero_title: "Architecte solutions, securite cloud & IA agentique freelance a Paris"
+hero_title: "Architecte solutions, sécurité cloud & IA agentique freelance à Paris"
 hero_subtitle: "Modernisation, DevSecOps, IAM et IA agentique pour plateformes critiques"
 ---
 
@@ -15,7 +15,7 @@ hero_subtitle: "Modernisation, DevSecOps, IAM et IA agentique pour plateformes c
     <h2>{{ site.author.name }}</h2>
     <p><strong>{{ site.author.title }} · <span class="exp-years" data-exp-start-year="{{ site.author.experience_start_year }}" data-exp-start-month="{{ site.author.experience_start_month }}">15</span> ans sur des plateformes critiques (finance, assurance, SaaS).</strong></p>
     <p>Concepteur d'<a href="{{ '/archi-ia#aegis-defend' | relative_url }}"><strong>Aegis Defend</strong></a> (SOAR autonome) et d'<a href="{{ '/archi-ia#agentforge' | relative_url }}"><strong>AgentForge</strong></a> (software factory multi-agents).</p>
-    <p>Ma valeur : transformer une idee d'IA en plateforme qui tient en production — orchestration LangGraph, HITL, guardrails, observabilite. Pas de prompt magic, des livrables au forfait.</p>
+    <p>Ma valeur : transformer une idée d'IA en plateforme qui tient en production — orchestration LangGraph, HITL, guardrails, observabilité. Pas de prompt magic, des livrables au forfait.</p>
   </div>
 </div>
 
@@ -25,9 +25,9 @@ hero_subtitle: "Modernisation, DevSecOps, IAM et IA agentique pour plateformes c
 
 ## Positionnement
 
-- Architecte solutions pour PME, scale-ups et acteurs B2B avec enjeux de securite et d'integration.
-- Specialiste des migrations legacy, de la resilience et de l'industrialisation DevSecOps.
-- Expertise **IA agentique** appliquee a la securite et a la productivite — deux produits conçus de bout en bout: [voir l'archi IA]({{ "/archi-ia" | relative_url }}).
+- Architecte solutions pour PME, scale-ups et acteurs B2B avec enjeux de sécurité et d'intégration.
+- Spécialiste des migrations legacy, de la résilience et de l'industrialisation DevSecOps.
+- Expertise **IA agentique** appliquée à la sécurité et à la productivité — deux produits conçus de bout en bout : [voir l'archi IA]({{ "/archi-ia" | relative_url }}).
 
 ---
 
@@ -43,7 +43,7 @@ hero_subtitle: "Modernisation, DevSecOps, IAM et IA agentique pour plateformes c
 {% endfor %}
 </div>
 
-Pour plus de details: [voir la strategie]({{ "/strategie" | relative_url }}).
+Pour plus de détails : [voir la stratégie]({{ "/strategie" | relative_url }}).
 
 ---
 
@@ -56,11 +56,11 @@ Pour plus de details: [voir la strategie]({{ "/strategie" | relative_url }}).
 {% endfor %}
 {% endfor %}
 
-<p style="margin-top: 1.5rem;"><a href="{{ '/projects' | relative_url }}"><strong>Voir toutes mes experiences et clients →</strong></a></p>
+<p style="margin-top: 1.5rem;"><a href="{{ '/projects' | relative_url }}"><strong>Voir toutes mes expériences et clients →</strong></a></p>
 
 ---
 
-## Expertises cles
+## Expertises clés
 
 <div class="skills expert">
 {% for skill in site.skills.expert %}  <span>{{ skill }}</span>
@@ -68,7 +68,7 @@ Pour plus de details: [voir la strategie]({{ "/strategie" | relative_url }}).
 
 ---
 
-## Competences standards
+## Compétences standards
 
 <div class="skills standard">
 {% for skill in site.skills.standard %}  <span>{{ skill }}</span>
