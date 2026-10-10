@@ -286,8 +286,11 @@ ai_stack:
 ai_solutions:
   - id: "aegis-defend"
     name: "Aegis Defend"
-    tagline: "SOAR agentique autonome pour PME — sans SIEM requis."
-    tagline_en: "Autonomous agentic SOAR for SMBs — no SIEM required."
+    product_url: "https://aegis-defend-product.agentforge-presentation.workers.dev/"
+    product_label: "Voir la page produit Aegis Defend"
+    product_label_en: "See the Aegis Defend product page"
+    tagline: "SOAR agentique autonome pour PME, sans SIEM requis."
+    tagline_en: "Autonomous agentic SOAR for SMBs, no SIEM required."
     status: "Pilote disponible"
     status_en: "Pilot available"
     description: "Plateforme de SOC autonome : un agent Go collecte les logs, 18 agents IA orchestrés en LangGraph investiguent, qualifient et proposent des actions sous contrôle humain."
