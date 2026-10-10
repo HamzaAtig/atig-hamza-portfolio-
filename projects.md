@@ -25,3 +25,13 @@ hero_subtitle: "Finance, assurance, SaaS et plateformes B2B"
 |---|---|---|
 {% for project in site.projects %}| {{ project.client }} | {{ project.sector }} | {{ project.mission }} |
 {% endfor %}
+
+---
+
+## Produits en propre
+
+{% for solution in site.ai_solutions %}{% if solution.product_url %}
+### {{ solution.name }}
+- {{ solution.tagline }}
+- [{{ solution.product_label }}]({{ solution.product_url }})
+{% endif %}{% endfor %}
