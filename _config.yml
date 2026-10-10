@@ -309,6 +309,9 @@ ai_solutions:
 
   - id: "agentforge"
     name: "AgentForge"
+    product_url: "https://agentforge-product.agentforge-presentation.workers.dev/"
+    product_label: "Voir la page produit AgentForge"
+    product_label_en: "See the AgentForge product page"
     tagline: "Software factory multi-agents : de l'idée au livrable, sous contrôle humain."
     tagline_en: "Multi-agent software factory: from idea to deliverable, with human oversight."
     status: "Early adopter"

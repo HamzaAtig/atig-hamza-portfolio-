@@ -56,6 +56,9 @@ Avec **<span class="exp-years" data-exp-start-year="{{ site.author.experience_st
 {% for cap in solution.capabilities %}
 - {{ cap }}
 {% endfor %}
+{% if solution.product_url %}
+<p><a href="{{ solution.product_url }}" target="_blank" rel="noopener"><strong>{{ solution.product_label }} →</strong></a></p>
+{% endif %}
 
 ---
 {% endfor %}
