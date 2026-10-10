@@ -86,6 +86,12 @@ With **<span class="exp-years" data-exp-start-year="{{ site.author.experience_st
 
 ## Beyond the products
 
-Agentic AI expertise transfers to your own internal use cases: SOC assistant, dev copilot, documentation generation, conditional ticket automation, domain-specific RAG. The technical foundation stays the same — orchestration, human control, observability, security.
+Agentic AI expertise transfers to your own internal use cases: SOC assistant, dev copilot, documentation generation, conditional ticket automation, domain-specific RAG. The technical foundation stays the same: orchestration, human control, observability, security.
 
 [Let's discuss a use case]({{ "/en/contact" | relative_url }}).
+
+{% if site.social.calendly %}
+<div style="margin: 1.5rem 0;">
+  <a href="{{ site.social.calendly }}" target="_blank" rel="noopener" style="display: inline-block; padding: 0.7rem 1.4rem; background: #3498db; color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600;">📅 Book a free 30-min AI assessment</a>
+</div>
+{% endif %}

@@ -86,6 +86,12 @@ Avec **<span class="exp-years" data-exp-start-year="{{ site.author.experience_st
 
 ## Et au-delà des produits
 
-L'expertise IA agentique se transpose sur vos propres cas d'usage internes : assistant SOC, copilote dev, génération de documentation, automatisation conditionnelle de tickets, RAG métier. Le socle technique reste le même — orchestration, contrôle humain, observabilité, sécurité.
+L'expertise IA agentique se transpose sur vos propres cas d'usage internes : assistant SOC, copilote dev, génération de documentation, automatisation conditionnelle de tickets, RAG métier. Le socle technique reste le même : orchestration, contrôle humain, observabilité, sécurité.
 
 [Discutons d'un cas d'usage]({{ "/contact" | relative_url }}).
+
+{% if site.social.calendly %}
+<div style="margin: 1.5rem 0;">
+  <a href="{{ site.social.calendly }}" target="_blank" rel="noopener" style="display: inline-block; padding: 0.7rem 1.4rem; background: #3498db; color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600;">📅 Réserver un diagnostic IA gratuit (30 min)</a>
+</div>
+{% endif %}
