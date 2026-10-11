@@ -6,7 +6,7 @@ description: "Réservez un créneau gratuit (30 min) avec Hamza Atig, architecte
 keywords: "contact architecte freelance Paris, réserver diagnostic gratuit, Calendly Hamza Atig, mission forfaitaire, IA agentique, sécurité cloud"
 alternate: /en/contact
 hero_title: "Contact architecte solutions, sécurité cloud & IA agentique"
-hero_subtitle: "Paris — missions forfaitaires et pilotes IA"
+hero_subtitle: "Paris : missions forfaitaires et pilotes IA"
 ---
 
 ## Contactez-moi

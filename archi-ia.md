@@ -7,7 +7,7 @@ description: "Expertise IA agentique appliquée à la sécurité et à la produc
 keywords: "IA agentique, agentic AI, LangGraph, RAG pgvector, HITL, guardrails LLM, multi-agents, orchestration agents IA, SOAR autonome, Aegis Defend, AgentForge, MITRE ATT&CK, multi-LLM, OpenAI, Anthropic, Ollama, architecture IA Paris, freelance IA"
 alternate: /en/ai-architecture
 hero_title: "Architecture IA agentique pour la sécurité & la productivité"
-hero_subtitle: "Systèmes orchestrés, observables et sécurisés — LangGraph, RAG, HITL, guardrails"
+hero_subtitle: "Systèmes orchestrés, observables et sécurisés : LangGraph, RAG, HITL, guardrails"
 ---
 
 ## Pourquoi une expertise IA agentique distincte

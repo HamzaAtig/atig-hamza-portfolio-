@@ -6,11 +6,11 @@ lang: en
 description: "Freelance architect in Paris specialized in modernization, cloud security, DevSecOps and agentic AI (LangGraph, RAG, HITL). Fixed-price packages and products: Aegis Defend (autonomous SOAR), AgentForge (multi-agent factory)."
 keywords: "solutions architect freelance Paris, cloud architect, cloud security, agentic AI, LangGraph, RAG pgvector, HITL, multi-agent, autonomous SOAR, AgentForge, Aegis Defend, DevSecOps, IAM, legacy modernization, Spring Boot"
 alternate: /
-hero_title: "Agentic AI & cloud security architect — freelance, Paris"
+hero_title: "Agentic AI & cloud security architect, freelance in Paris"
 hero_subtitle: "AI platforms that hold up in production. No prompt magic."
 ---
 
-<div id="about-pitch" style="display: flex; align-items: center; gap: 2rem; margin-top: 2rem;">
+<div id="about-pitch" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 2rem; margin-top: 2rem;">
   <img src="{{ site.author.photo | relative_url }}" alt="{{ site.author.name }}" width="140" height="140" loading="lazy" decoding="async" style="width: 140px; height: 140px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
 
   <div>

@@ -7,7 +7,7 @@ description: "Agentic AI expertise applied to security and productivity. LangGra
 keywords: "agentic AI, LangGraph, RAG pgvector, HITL, LLM guardrails, multi-agent orchestration, autonomous SOAR, Aegis Defend, AgentForge, MITRE ATT&CK, multi-LLM, OpenAI, Anthropic, Ollama, AI architecture Paris, freelance AI architect"
 alternate: /archi-ia
 hero_title: "Agentic AI architecture for security & productivity"
-hero_subtitle: "Orchestrated, observable, secure systems — LangGraph, RAG, HITL, guardrails"
+hero_subtitle: "Orchestrated, observable, secure systems: LangGraph, RAG, HITL, guardrails"
 ---
 
 ## Why a distinct agentic AI expertise
