@@ -16,8 +16,8 @@ hero_subtitle: "AI platforms that hold up in production. No prompt magic."
   <div>
     <h2>{{ site.author.name }}</h2>
     <p><strong>{{ site.author.title_en }} · <span class="exp-years" data-exp-start-year="{{ site.author.experience_start_year }}" data-exp-start-month="{{ site.author.experience_start_month }}">15</span> years on critical platforms (finance, insurance, SaaS).</strong></p>
-    <p>Creator of <a href="{{ '/en/ai-architecture#aegis-defend' | relative_url }}"><strong>Aegis Defend</strong></a> (autonomous SOAR) and <a href="{{ '/en/ai-architecture#agentforge' | relative_url }}"><strong>AgentForge</strong></a> (multi-agent software factory).</p>
-    <p>What I deliver: turning AI ideas into platforms that hold up in production — LangGraph orchestration, HITL, guardrails, observability. No prompt magic, fixed-price deliverables.</p>
+    <p>Creator of <a href="https://aegis-defend-product.agentforge-presentation.workers.dev/en/" target="_blank" rel="noopener"><strong>Aegis Defend</strong></a> (autonomous SOAR) and <a href="https://agentforge-product.agentforge-presentation.workers.dev/en/" target="_blank" rel="noopener"><strong>AgentForge</strong></a> (multi-agent software factory).</p>
+    <p>What I deliver: turning AI ideas into platforms that hold up in production: LangGraph orchestration, HITL, guardrails, observability. No prompt magic, fixed-price deliverables.</p>
   </div>
 </div>
 
