@@ -435,6 +435,7 @@ use_cases:
       - "DevSecOps governance with integrated SAST/DAST scans"
 
   - title: "Sécurité & IAM pour une plateforme assurance"
+    diagrams: "uc-iam-diagrams"
     title_en: "Security & IAM for an insurance platform"
     context: "Plateforme d'investissement à fort volume, échanges B2B sensibles avec partenaires financiers."
     context_en: "High-volume investment platform, sensitive B2B exchanges with financial partners."

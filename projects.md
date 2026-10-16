@@ -40,4 +40,4 @@ hero_subtitle: "Finance, assurance, SaaS et plateformes B2B"
 
 ## Exemples de travaux
 
-Une étude de benchmark (6 langages, 3 frameworks Java, mesures et graphiques) et d'autres cas concrets sont détaillés dans les [cas d'usage]({{ "/cas-usage#benchmark" | relative_url }}).
+Une étude de benchmark (Java, Go, Rust et Spring Boot, mesures et graphiques) et d'autres cas concrets sont détaillés dans les [cas d'usage]({{ "/cas-usage#benchmark" | relative_url }}).

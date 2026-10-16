@@ -41,4 +41,4 @@ hero_subtitle: "Finance, insurance, SaaS and B2B platforms"
 
 ## Work samples
 
-A benchmark study (6 languages, 3 Java frameworks, measurements and charts) and other concrete cases are detailed in the [use cases]({{ "/en/use-cases#benchmark" | relative_url }}).
+A benchmark study (Java, Go, Rust and Spring Boot, measurements and charts) and other concrete cases are detailed in the [use cases]({{ "/en/use-cases#benchmark" | relative_url }}).
