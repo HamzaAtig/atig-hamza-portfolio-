@@ -59,10 +59,33 @@
       function gtag() {
         dataLayer.push(arguments);
       }
+      /* Consent Mode v2 : mesure refusée tant que le visiteur n'a pas
+         accepté (bandeau géré par consent.js) ; un choix déjà mémorisé est
+         relu ici pour mesurer dès le chargement. */
+      (function () {
+        var granted = false;
+        try {
+          var c = JSON.parse(localStorage.getItem("cc-choice-v1"));
+          granted = !!c && c.v === "granted" && Date.now() - c.t < 182 * 864e5;
+        } catch (e) {}
+        gtag("consent", "default", {
+          analytics_storage: granted ? "granted" : "denied",
+          ad_storage: "denied",
+          ad_user_data: "denied",
+          ad_personalization: "denied",
+        });
+      })();
+      gtag("set", "ads_data_redaction", true);
       gtag("js", new Date());
 
       gtag("config", "{{ site.google_analytics }}");
     </script>
+    <script
+      src="{{ '/assets/js/consent.js' | relative_url }}"
+      defer
+      data-clarity="{{ site.clarity_id }}"
+      data-linkedin="{{ site.linkedin_partner_id }}"
+    ></script>
     {% endif %}
 
     <!-- JS pour menu burger -->
@@ -304,6 +327,7 @@
     <footer>
       &copy; {{ site.time | date: "%Y" }} <strong>{{ site.author.name }}</strong> —
       {% if page.lang == "en" %}All rights reserved.{% else %}Tous droits réservés.{% endif %}
+      · <a href="#" data-cc-open>Cookies</a>
     </footer>
     <script>
       (function () {

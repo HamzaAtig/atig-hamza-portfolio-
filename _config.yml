@@ -558,3 +558,8 @@ defaults:
       path: ""
     values:
       image: /assets/img/og-card.jpg
+
+# Outils de mesure optionnels, chargés seulement après consentement (consent.js).
+# Laisser vide pour ne pas les charger.
+clarity_id: ""
+linkedin_partner_id: ""
