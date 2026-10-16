@@ -22,6 +22,70 @@
 
   function track(name, params) {
     if (typeof window.gtag === "function") window.gtag("event", name, params || {});
+    noteIntent(name, params || {});
+  }
+
+  /* ── Score d'intention : un visiteur qui cumule les signaux d'intérêt
+     déclenche une seule fois « high_intent » (à marquer comme événement clé
+     dans GA4). Points volontairement simples, à ajuster avec l'usage. ── */
+  var INTENT_THRESHOLD = 6;
+  var POINTS = {
+    book_call_click: 6, video_play: 3, cross_site_click: 2, diagram_zoom: 2,
+    text_copy: 1, cta_view: 1, email_click: 4, linkedin_click: 2
+  };
+  var score = 0, signals = {}, sectionsSeen = 0, intentSent = false;
+
+  function noteIntent(name, params) {
+    var key = name, pts = POINTS[name] || 0;
+    if (name === "section_view") {
+      sectionsSeen += 1;
+      if (sectionsSeen < 4) return;
+      key = "sections_4plus"; pts = 2;
+    } else if (name === "read_time") {
+      if (params.seconds < 90) return;
+      key = "read_90s"; pts = 2;
+    } else if (name === "scroll_depth") {
+      if (params.percent < 75) return;
+      key = "scroll_75"; pts = 1;
+    }
+    if (!pts || signals[key]) return;
+    signals[key] = true;
+    score += pts;
+    if (!intentSent && score >= INTENT_THRESHOLD && typeof window.gtag === "function") {
+      intentSent = true;
+      window.gtag("event", "high_intent", {
+        intent_score: score,
+        intent_signals: Object.keys(signals).join(",")
+      });
+    }
+  }
+
+  function siteId() {
+    var h = location.hostname;
+    if (/aegis-defend/.test(h)) return "aegis-defend";
+    if (/agentforge/.test(h)) return "agentforge";
+    if (/github\.io/.test(h)) return "portfolio";
+    return h || "local";
+  }
+
+  /* Source d'arrivée : utm_source de l'URL, sinon le site d'où vient le
+     visiteur, sinon « direct ». Gardée pour la session seulement si le
+     visiteur a accepté la mesure. */
+  function firstTouch() {
+    var m = location.search.match(/[?&]utm_source=([^&#]+)/);
+    var src = m ? decodeURIComponent(m[1]) : "";
+    if (!src && document.referrer) {
+      try {
+        var rh = new URL(document.referrer).hostname;
+        if (rh !== location.hostname) src = /linkedin|lnkd\.in/.test(rh) ? "linkedin" : rh.replace(/^www\./, "");
+      } catch (e) {}
+    }
+    var granted = readChoice() === "granted";
+    try {
+      if (src && granted && !sessionStorage.getItem("cc-first-touch")) sessionStorage.setItem("cc-first-touch", src);
+      if (granted && sessionStorage.getItem("cc-first-touch")) return sessionStorage.getItem("cc-first-touch");
+    } catch (e) {}
+    return src || "direct";
   }
 
   /* ── Choix mémorisé ── */
@@ -144,9 +208,33 @@
     if (choice) apply(choice);
     else show();
 
+    /* Liens Calendly : chaque réservation garde sa provenance (site, bouton,
+       source d'arrivée), visible dans le détail du rendez-vous Calendly. */
+    var touch = firstTouch();
+    document.querySelectorAll('a[href*="calendly.com"]').forEach(function (a) {
+      try {
+        var u = new URL(a.href);
+        u.searchParams.set("utm_source", siteId());
+        u.searchParams.set("utm_medium", "site");
+        u.searchParams.set("utm_content", whereIs(a));
+        u.searchParams.set("utm_campaign", touch);
+        a.href = u.toString();
+      } catch (e) {}
+    });
+
     document.addEventListener("click", function (e) {
       var open = e.target.closest("[data-cc-open]");
       if (open) { e.preventDefault(); show(); return; }
+
+      var zoom = e.target.closest(".svg-wrap, .capture");
+      if (zoom) {
+        var cap = zoom.querySelector(".svg-caption, .caption, figcaption");
+        track("diagram_zoom", {
+          diagram: (cap ? cap.textContent : zoom.className).trim().slice(0, 80),
+          link_location: whereIs(zoom)
+        });
+        return;
+      }
 
       var a = e.target.closest("a[href]");
       if (!a) return;
@@ -196,6 +284,63 @@
         track("video_play", { video_id: id, link_location: whereIs(f) });
       }, 0);
     });
+
+    /* Profondeur de lecture : 25, 50, 75, 100 % */
+    var depthHit = {};
+    window.addEventListener("scroll", function () {
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      if (max <= 0) return;
+      var pct = (window.scrollY / max) * 100;
+      [25, 50, 75, 100].forEach(function (m) {
+        if (pct >= m - 1 && !depthHit[m]) {
+          depthHit[m] = true;
+          track("scroll_depth", { percent: m });
+        }
+      });
+    }, { passive: true });
+
+    /* Temps de lecture réel (onglet visible uniquement) */
+    var visibleMs = 0, last = Date.now(), timeHit = {};
+    setInterval(function () {
+      var now = Date.now();
+      if (document.visibilityState === "visible") visibleMs += now - last;
+      last = now;
+      [30, 90, 180, 300].forEach(function (m) {
+        if (visibleMs >= m * 1000 && !timeHit[m]) {
+          timeHit[m] = true;
+          track("read_time", { seconds: m });
+        }
+      });
+    }, 5000);
+
+    /* Texte copié (un e-mail, une phrase du pitch, un chiffre...) */
+    document.addEventListener("copy", function () {
+      var sel = window.getSelection();
+      var txt = String(sel || "");
+      if (txt.length < 3) return;
+      var node = sel.anchorNode && sel.anchorNode.nodeType === 1 ? sel.anchorNode : sel.anchorNode && sel.anchorNode.parentElement;
+      track("text_copy", { chars: txt.length, link_location: node ? whereIs(node) : "page" });
+    });
+
+    /* Bouton Calendly vu au moins une seconde (vu mais pas cliqué = piste) */
+    if ("IntersectionObserver" in window) {
+      var ctaSeen = {}, timers = new Map();
+      var cio = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en_) {
+          var loc = whereIs(en_.target);
+          if (en_.isIntersecting && !ctaSeen[loc]) {
+            timers.set(en_.target, setTimeout(function () {
+              ctaSeen[loc] = true;
+              track("cta_view", { link_location: loc });
+            }, 1000));
+          } else if (!en_.isIntersecting && timers.has(en_.target)) {
+            clearTimeout(timers.get(en_.target));
+            timers.delete(en_.target);
+          }
+        });
+      }, { threshold: 0.6 });
+      document.querySelectorAll('a[href*="calendly.com"]').forEach(function (a) { cio.observe(a); });
+    }
   }
 
   function whereIs(el) {

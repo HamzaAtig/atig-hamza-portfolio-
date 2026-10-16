@@ -75,6 +75,15 @@
           ad_personalization: "denied",
         });
       })();
+      /* Trafic interne : ?internal=1 une fois sur ses propres appareils
+         (?internal=0 pour annuler), exclu par le filtre GA4. */
+      (function () {
+        try {
+          var m = location.search.match(/[?&]internal=([01])/);
+          if (m) localStorage.setItem("cc-internal", m[1]);
+          if (localStorage.getItem("cc-internal") === "1") gtag("set", { traffic_type: "internal" });
+        } catch (e) {}
+      })();
       gtag("set", "ads_data_redaction", true);
       gtag("js", new Date());
 
