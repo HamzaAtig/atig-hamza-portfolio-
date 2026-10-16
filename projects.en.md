@@ -12,7 +12,7 @@ hero_subtitle: "Finance, insurance, SaaS and B2B platforms"
 ## Latest experience (excerpts)
 
 {% for exp in site.experiences %}
-### {% if exp.logo %}<img src="{{ exp.logo | relative_url }}" alt="{{ exp.company }}" width="28" height="28" style="vertical-align: middle; margin-right: 0.4rem; border-radius: 4px;"/>{% endif %}{{ exp.company }} — {{ exp.role_en }} ({{ exp.period_en }})
+### {% if exp.logo %}<img src="{{ exp.logo | relative_url }}" alt="{{ exp.company }}" width="28" height="28" style="vertical-align: middle; margin-right: 0.4rem; border-radius: 4px;"/>{% endif %}{{ exp.company }} · {{ exp.role_en }} ({{ exp.period_en }})
 - {{ exp.description_en }}
 {% for h in exp.highlights_en %}- {{ h }}
 {% endfor %}
@@ -36,3 +36,9 @@ hero_subtitle: "Finance, insurance, SaaS and B2B platforms"
 - {{ solution.tagline_en }}
 - [{{ solution.product_label_en }}]({{ solution.product_url }})
 {% endif %}{% endfor %}
+
+---
+
+## Work samples
+
+A benchmark study (6 languages, 3 Java frameworks, measurements and charts) and other concrete cases are detailed in the [use cases]({{ "/en/use-cases#benchmark" | relative_url }}).

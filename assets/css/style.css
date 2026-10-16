@@ -1011,3 +1011,110 @@ footer strong {
   --cc-fg: #e4e9f1;
   --cc-border: #33405a;
 }
+
+/* Graphiques à barres simples (extrait benchmark, page Projets) */
+.bench-charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 1.2rem 0 1.6rem;
+}
+.bench-chart {
+  flex: 1 1 300px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.1rem 0.8rem;
+  background: var(--card);
+}
+.bench-title {
+  margin: 0 0 0.7rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.bench-title span {
+  display: block;
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+.bench-row {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr 2.6rem;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0.32rem 0;
+  font-size: 0.88rem;
+}
+.bench-label { color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bench-track { display: flex; flex-direction: column; gap: 3px; }
+.bench-bar {
+  display: block;
+  height: 12px;
+  border-radius: 3px;
+  background: #3498db;
+}
+.bench-bar.alt { background: #a9cfee; }
+.bench-val { text-align: right; font-variant-numeric: tabular-nums; color: var(--text-muted); }
+.bench-legend { margin: 0.6rem 0 0; font-size: 0.82rem; color: var(--text-muted); }
+.bench-legend i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  margin: 0 0.3rem 0 0.8rem;
+  vertical-align: -1px;
+}
+:root[data-theme="dark"] .bench-bar { background: #5dade2; }
+:root[data-theme="dark"] .bench-bar.alt { background: #2e5f86; }
+@media (max-width: 480px) {
+  .bench-row { grid-template-columns: 7.2rem 1fr 2.2rem; font-size: 0.82rem; }
+  .bench-label { white-space: normal; line-height: 1.2; }
+}
+.bench-dots { position: relative; height: 16px; border-bottom: 1px solid var(--border); display: block; }
+.bench-dot {
+  position: absolute;
+  top: 2px;
+  width: 11px;
+  height: 11px;
+  margin-left: -5.5px;
+  border-radius: 50%;
+  background: #3498db;
+  opacity: 0.6;
+}
+:root[data-theme="dark"] .bench-dot { background: #5dade2; }
+.bench-axis { position: relative; display: block; height: 1rem; font-size: 0.72rem; color: var(--text-muted); }
+.bench-axis span { position: absolute; transform: translateX(-50%); }
+
+/* Sections pliables (page Cas d'usage) */
+details.uc {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+  margin: 0 0 1rem;
+  padding: 0 1.2rem;
+}
+details.uc > summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 1rem 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 0.8rem;
+}
+details.uc > summary::-webkit-details-marker { display: none; }
+details.uc > summary::before {
+  content: "+";
+  display: inline-block;
+  width: 1.1rem;
+  color: var(--cta-bg);
+  font-weight: 700;
+}
+details.uc[open] > summary::before { content: "−"; }
+details.uc[open] > summary { border-bottom: 1px solid var(--border); margin-bottom: 1rem; }
+details.uc > summary:hover { color: var(--cta-bg); }
+.uc-tag { font-size: 0.85rem; font-weight: 400; color: var(--text-muted); }
+details.uc[open] { padding-bottom: 0.6rem; }

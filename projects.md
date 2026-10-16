@@ -11,7 +11,7 @@ hero_subtitle: "Finance, assurance, SaaS et plateformes B2B"
 ## Dernières expériences (extraits)
 
 {% for exp in site.experiences %}
-### {% if exp.logo %}<img src="{{ exp.logo | relative_url }}" alt="{{ exp.company }}" width="28" height="28" style="vertical-align: middle; margin-right: 0.4rem; border-radius: 4px;"/>{% endif %}{{ exp.company }} — {{ exp.role }} ({{ exp.period }})
+### {% if exp.logo %}<img src="{{ exp.logo | relative_url }}" alt="{{ exp.company }}" width="28" height="28" style="vertical-align: middle; margin-right: 0.4rem; border-radius: 4px;"/>{% endif %}{{ exp.company }} · {{ exp.role }} ({{ exp.period }})
 - {{ exp.description }}
 {% for h in exp.highlights %}- {{ h }}
 {% endfor %}
@@ -35,3 +35,9 @@ hero_subtitle: "Finance, assurance, SaaS et plateformes B2B"
 - {{ solution.tagline }}
 - [{{ solution.product_label }}]({{ solution.product_url }})
 {% endif %}{% endfor %}
+
+---
+
+## Exemples de travaux
+
+Une étude de benchmark (6 langages, 3 frameworks Java, mesures et graphiques) et d'autres cas concrets sont détaillés dans les [cas d'usage]({{ "/cas-usage#benchmark" | relative_url }}).
