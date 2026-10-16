@@ -286,7 +286,7 @@ ai_stack:
 ai_solutions:
   - id: "aegis-defend"
     name: "Aegis Defend"
-    product_url: "https://aegis-defend-product.agentforge-presentation.workers.dev/"
+    product_url: "https://aegis-defend.hamza-atig.workers.dev/"
     product_label: "Voir la page produit Aegis Defend"
     product_label_en: "See the Aegis Defend product page"
     tagline: "SOAR agentique autonome pour PME, sans SIEM requis."
@@ -312,7 +312,7 @@ ai_solutions:
 
   - id: "agentforge"
     name: "AgentForge"
-    product_url: "https://agentforge-product.agentforge-presentation.workers.dev/"
+    product_url: "https://agentforge.hamza-atig.workers.dev/"
     product_label: "Voir la page produit AgentForge"
     product_label_en: "See the AgentForge product page"
     tagline: "Software factory multi-agents : de l'idée au livrable, sous contrôle humain."

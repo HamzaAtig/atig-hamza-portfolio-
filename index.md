@@ -14,7 +14,7 @@ hero_subtitle: "Des plateformes IA qui tiennent en production. Pas de prompt mag
   <div>
     <h2>{{ site.author.name }}</h2>
     <p><strong>{{ site.author.title }} · <span class="exp-years" data-exp-start-year="{{ site.author.experience_start_year }}" data-exp-start-month="{{ site.author.experience_start_month }}">15</span> ans sur des plateformes critiques (finance, assurance, SaaS).</strong></p>
-    <p>Concepteur d'<a href="https://aegis-defend-product.agentforge-presentation.workers.dev/" target="_blank" rel="noopener"><strong>Aegis Defend</strong></a> (SOAR autonome) et d'<a href="https://agentforge-product.agentforge-presentation.workers.dev/" target="_blank" rel="noopener"><strong>AgentForge</strong></a> (software factory multi-agents).</p>
+    <p>Concepteur d'<a href="https://aegis-defend.hamza-atig.workers.dev/" target="_blank" rel="noopener"><strong>Aegis Defend</strong></a> (SOAR autonome) et d'<a href="https://agentforge.hamza-atig.workers.dev/" target="_blank" rel="noopener"><strong>AgentForge</strong></a> (software factory multi-agents).</p>
     <p>Ma valeur : transformer une idée d'IA en plateforme qui tient en production : orchestration LangGraph, HITL, guardrails, observabilité. Pas de prompt magic, des livrables au forfait.</p>
   </div>
 </div>
