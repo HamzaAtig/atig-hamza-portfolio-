@@ -56,7 +56,7 @@ def diagram(uid, title, participants, steps, footer, width=880):
             lx = left + 22
             if lx + text_w(label) > width - 6:
                 lx = width - 6 - text_w(label)
-            out.append(num.format(cx=left + 10))
+            out.append(num.format(cx=lx - 12))
             out.append(f'<text class="seq-label halo" x="{lx:.0f}" y="{y - 6}">{html.escape(label)}</text>')
     out.append("</svg>")
     body = "".join(out)
@@ -149,13 +149,63 @@ T = {
     },
 }
 
-for lang, t in T.items():
-    parts = [f'<div class="seq-block">\n<p class="seq-intro">{html.escape(t["intro"])}</p>',
-             diagram(f"sso-{lang}", *t["sso"]),
-             diagram(f"zt-{lang}", *t["zt"]),
-             "</div>"]
-    dest = ROOT / "_includes" / f"uc-iam-diagrams-{lang}.html"
-    dest.write_text("\n".join(parts) + "\n", encoding="utf-8")
-    txt = dest.read_text(encoding="utf-8")
-    assert "—" not in txt and "–" not in txt, "tiret long interdit"
-    print(f"{dest.relative_to(ROOT)} : {len(txt) / 1024:.1f} Ko")
+OBS = {
+    "fr": {
+        "intro": "Un schéma de principe pour illustrer l'approche (modèle générique, pas l'architecture d'un client).",
+        "detect": (
+            "Détection d'incident : du symptôme à la cause",
+            ["Application\n(pays X)", "Collecte\n(agents, Logstash)", "Elasticsearch", "Dynatrace\n(SLO)", "Équipe\nd'astreinte", "Kibana /\nGrafana"],
+            [
+                (0, 1, "Logs, métriques, traces + ID de corrélation", "call"),
+                (1, 1, "Enrichit : pays, client, version", "call"),
+                (1, 2, "Indexe par pays et par jour", "call"),
+                (0, 3, "Latence et erreurs mesurées en continu", "call"),
+                (3, 3, "Le budget d'erreur du pays X baisse trop vite", "call"),
+                (3, 4, "Alerte ciblée : pays, service, gravité", "call"),
+                (4, 5, "Ouvre le tableau de bord du pays X", "call"),
+                (5, 2, "Recherche par ID de corrélation", "call"),
+                (2, 5, "Parcours complet de la requête en erreur", "reply"),
+                (4, 0, "Correctif ou bascule", "call"),
+                (3, 4, "Retour sous l'objectif de service", "reply"),
+            ],
+            "L'alerte part d'un objectif de service par pays, pas d'un seuil technique : moins de fausses alertes, et la cause se retrouve en quelques recherches.",
+        ),
+    },
+    "en": {
+        "intro": "A reference diagram to illustrate the approach (generic pattern, not a client's architecture).",
+        "detect": (
+            "Incident detection: from symptom to cause",
+            ["Application\n(country X)", "Collection\n(agents, Logstash)", "Elasticsearch", "Dynatrace\n(SLO)", "On-call\nteam", "Kibana /\nGrafana"],
+            [
+                (0, 1, "Logs, metrics, traces + correlation ID", "call"),
+                (1, 1, "Enriches: country, client, version", "call"),
+                (1, 2, "Indexes by country and by day", "call"),
+                (0, 3, "Latency and errors measured continuously", "call"),
+                (3, 3, "Country X's error budget drops too fast", "call"),
+                (3, 4, "Targeted alert: country, service, severity", "call"),
+                (4, 5, "Opens country X's dashboard", "call"),
+                (5, 2, "Search by correlation ID", "call"),
+                (2, 5, "Full path of the failing request", "reply"),
+                (4, 0, "Fix or failover", "call"),
+                (3, 4, "Back within the service objective", "reply"),
+            ],
+            "The alert comes from a per-country service objective, not a technical threshold: fewer false alarms, and the cause is found in a few searches.",
+        ),
+    },
+}
+
+SETS = [
+    ("uc-iam-diagrams", T, ["sso", "zt"]),
+    ("uc-obs-diagrams", OBS, ["detect"]),
+]
+
+for name, texts, keys in SETS:
+    for lang, t in texts.items():
+        parts = [f'<div class="seq-block">\n<p class="seq-intro">{html.escape(t["intro"])}</p>']
+        parts += [diagram(f"{k}-{lang}", *t[k]) for k in keys]
+        parts.append("</div>")
+        dest = ROOT / "_includes" / f"{name}-{lang}.html"
+        dest.write_text("\n".join(parts) + "\n", encoding="utf-8")
+        txt = dest.read_text(encoding="utf-8")
+        assert "—" not in txt and "–" not in txt, "tiret long interdit"
+        print(f"{dest.relative_to(ROOT)} : {len(txt) / 1024:.1f} Ko")

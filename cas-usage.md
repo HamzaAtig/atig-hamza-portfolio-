@@ -93,6 +93,9 @@ Le rapport complet (méthode, graphiques, limites) se présente en rendez-vous.
 {% if usecase.diagrams %}{% capture diag %}{{ usecase.diagrams }}-fr.html{% endcapture %}
 {% include {{ diag }} %}
 {% endif %}
+{% if usecase.dashboard %}{% capture dash %}{{ usecase.dashboard }}-fr.html{% endcapture %}
+{% include {{ dash }} %}
+{% endif %}
 
 </details>
 {% endfor %}

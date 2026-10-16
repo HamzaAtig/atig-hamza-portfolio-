@@ -457,6 +457,8 @@ use_cases:
       - "Full access traceability (audit logs)"
 
   - title: "Observabilité & fiabilisation SaaS multi-pays"
+    diagrams: "uc-obs-diagrams"
+    dashboard: "uc-obs-dashboard"
     title_en: "Multi-country SaaS observability & reliability"
     context: "Plateforme CRM omnicanale pour centres d'appels internationaux, trafic multi-pays à forts volumes."
     context_en: "Omnichannel CRM platform for international call centers, high-volume multi-country traffic."

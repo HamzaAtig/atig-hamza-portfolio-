@@ -93,6 +93,9 @@ The full report (method, charts, limits) is presented in a call.
 {% if usecase.diagrams %}{% capture diag %}{{ usecase.diagrams }}-en.html{% endcapture %}
 {% include {{ diag }} %}
 {% endif %}
+{% if usecase.dashboard %}{% capture dash %}{{ usecase.dashboard }}-en.html{% endcapture %}
+{% include {{ dash }} %}
+{% endif %}
 
 </details>
 {% endfor %}
